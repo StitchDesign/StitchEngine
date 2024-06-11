@@ -1,0 +1,138 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StitchEngine
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension StitchEngine.GraphCalculatable {
+  @_Concurrency.MainActor public func calculate(from nodeIds: Swift.Set<Self.Node.ID>)
+  @_Concurrency.MainActor public func calculate(_ id: Self.Node.ID)
+  @_Concurrency.MainActor public func calculate(_ idSet: Swift.Set<Self.Node.ID>)
+  @_Concurrency.MainActor public func calculate(_ idList: [Self.Node.ID])
+}
+extension StitchEngine.GraphCalculatable {
+  @_Concurrency.MainActor public func updateDownstreamInputs(flowValues: [Self.Node.Row.PortData], outputCoordinate: Self.Node.Row.RowID) -> Swift.Set<Self.Node.ID>
+}
+extension StitchEngine.GraphCalculatable {
+  @_Concurrency.MainActor public func updateTopologicalData()
+}
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol GraphCalculatable<Node> : AnyObject {
+  associatedtype Node : StitchEngine.NodeCalculatable
+  typealias TopologicalData = StitchEngine.GraphTopologicalData<Self.Node>
+  var topologicalData: Self.TopologicalData { get set }
+  var nodes: [Self.Node.ID : Self.Node] { get set }
+  var shouldResortPreviewLayers: Swift.Bool { get set }
+  func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
+  func updateOrderedPreviewLayers()
+  func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
+  func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+}
+#else
+public protocol GraphCalculatable : AnyObject {
+  associatedtype Node : StitchEngine.NodeCalculatable
+  typealias TopologicalData = StitchEngine.GraphTopologicalData<Self.Node>
+  var topologicalData: Self.TopologicalData { get set }
+  var nodes: [Self.Node.ID : Self.Node] { get set }
+  var shouldResortPreviewLayers: Swift.Bool { get set }
+  func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
+  func updateOrderedPreviewLayers()
+  func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
+  func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+}
+#endif
+extension StitchEngine.GraphCalculatable {
+  public var connections: Self.TopologicalData.Connections {
+    get
+  }
+  public var shallowDownstreamNodes: Self.TopologicalData.ShallowDownstreamNodesDict {
+    get
+  }
+  public var nodesToRunOnGraphStep: Swift.Set<Self.Node.ID> {
+    get
+  }
+  public func setNodesForNextGraphStep(_ nodeIds: Swift.Set<Self.Node.ID>)
+  public func immediatelyUpstreamNodes(for node: Self.Node.ID) -> Swift.Set<Self.Node.ID>
+}
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol NodeCalculatable<Row> : AnyObject, Swift.Identifiable {
+  associatedtype Row : StitchEngine.NodeRowCalculatable where Self.ID == Self.Row.RowID.NodeId
+  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self == Self.EvalResult.Node
+  typealias PortData = Self.Row.PortData
+  typealias NodeId = Self.Row.RowID.NodeId
+  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.PortData]])
+  @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
+  @_Concurrency.MainActor func outputsUpdated(evalResult: Self.EvalResult)
+  @_Concurrency.MainActor func getAllInputsObservers() -> [Self.Row]
+  @_Concurrency.MainActor func getAllOutputsObservers() -> [Self.Row]
+  @_Concurrency.MainActor func getInputRowObserver(for id: Self.Row.RowID.PortId) -> Self.Row?
+  var id: Self.NodeId { get set }
+  var isGroupNode: Swift.Bool { get }
+}
+#else
+public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
+  associatedtype Row : StitchEngine.NodeRowCalculatable where Self.ID == Self.Row.RowID.NodeId
+  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self == Self.EvalResult.Node
+  typealias PortData = Self.Row.PortData
+  typealias NodeId = Self.Row.RowID.NodeId
+  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.PortData]])
+  @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
+  @_Concurrency.MainActor func outputsUpdated(evalResult: Self.EvalResult)
+  @_Concurrency.MainActor func getAllInputsObservers() -> [Self.Row]
+  @_Concurrency.MainActor func getAllOutputsObservers() -> [Self.Row]
+  @_Concurrency.MainActor func getInputRowObserver(for id: Self.Row.RowID.PortId) -> Self.Row?
+  var id: Self.NodeId { get set }
+  var isGroupNode: Swift.Bool { get }
+}
+#endif
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol NodeEvalResult<Node> {
+  associatedtype Node : StitchEngine.NodeCalculatable
+  var outputsValues: [[Self.Node.Row.PortData]] { get set }
+  var willEvalAgain: Swift.Bool { get set }
+  var mustEvalAllDownstreamNodes: Swift.Bool { get set }
+}
+#else
+public protocol NodeEvalResult {
+  associatedtype Node : StitchEngine.NodeCalculatable
+  var outputsValues: [[Self.Node.Row.PortData]] { get set }
+  var willEvalAgain: Swift.Bool { get set }
+  var mustEvalAllDownstreamNodes: Swift.Bool { get set }
+}
+#endif
+public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable {
+  associatedtype RowID : StitchEngine.NodeRowId
+  associatedtype PortData : Swift.Equatable
+  var id: Self.RowID { get set }
+  var upstreamOutputCoordinate: Self.RowID? { get }
+  var values: [Self.PortData] { get set }
+  func didInputsUpdate(newValues: [Self.PortData], oldValues: [Self.PortData])
+}
+extension StitchEngine.NodeRowCalculatable {
+  @_Concurrency.MainActor public func setValuesInInput(_ values: [Self.PortData])
+}
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol NodeRowId<NodeId> : Swift.Hashable, Swift.Identifiable {
+  associatedtype NodeId : Swift.Comparable, Swift.Hashable, Swift.Identifiable
+  associatedtype PortId : Swift.Identifiable
+  var portType: Self.PortId { get set }
+  var nodeId: Self.NodeId { get set }
+  init(portId: Swift.Int, nodeId: Self.NodeId)
+}
+#else
+public protocol NodeRowId : Swift.Hashable, Swift.Identifiable {
+  associatedtype NodeId : Swift.Comparable, Swift.Hashable, Swift.Identifiable
+  associatedtype PortId : Swift.Identifiable
+  var portType: Self.PortId { get set }
+  var nodeId: Self.NodeId { get set }
+  init(portId: Swift.Int, nodeId: Self.NodeId)
+}
+#endif
+public struct GraphTopologicalData<Node> where Node : StitchEngine.NodeCalculatable {
+  public typealias RowId = Node.Row.RowID
+  public typealias ShallowDownstreamNodesDict = [Node.ID : Swift.Set<Node.ID>]
+  public typealias Connections = [StitchEngine.GraphTopologicalData<Node>.RowId : Swift.Set<StitchEngine.GraphTopologicalData<Node>.RowId>]
+  public init()
+}
