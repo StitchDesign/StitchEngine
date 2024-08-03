@@ -72,6 +72,7 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
+  var requiresOutputValuesChange: Swift.Bool { get }
 }
 #else
 public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
@@ -89,6 +90,7 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
+  var requiresOutputValuesChange: Swift.Bool { get }
 }
 #endif
 #if compiler(>=5.3) && $PrimaryAssociatedTypes2

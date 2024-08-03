@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		30RLCCUItwvCByFIww/Bs2wG0oM=
+		SaiZv9MChnoroX6xvlMmdlIBsCI=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HDKfvSzqkaXu9N0Rioc4OVwuS9o=
+		YWCqs2slR2M2dyijAq5h7Ol9dH0=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pj5oFfssy7oZBAHfwXrrzkrCH7w=
+		BRd7NK0w9yXQVlPuNOqVRyft7EE=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HDKfvSzqkaXu9N0Rioc4OVwuS9o=
+		YWCqs2slR2M2dyijAq5h7Ol9dH0=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LWLyiVxK81auRF+eKRNmfoU6+Go=
+		yYmk7ngn63x4stiSG8GpkveXUBg=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		30RLCCUItwvCByFIww/Bs2wG0oM=
+		SaiZv9MChnoroX6xvlMmdlIBsCI=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FqApkftwkD3rDcfJfIyDdqA1r7Y=
+		/b+cIUydpWsGtL/PgQnzK20QANY=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kX8OtwC5Afa1x6WPRVPprpD476g=
+		YD8NyOJEQKxEJp3g+DuTQlHaeiM=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FqApkftwkD3rDcfJfIyDdqA1r7Y=
+		/b+cIUydpWsGtL/PgQnzK20QANY=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		petVq3srcissNYpcM79QmcIf7UU=
+		XyOhCvs9KkMEEffnoMaubdIA+70=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,70 +66,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgzIuL208uoa/VhcsA+te/S4ai1J50Pav9JDH0RT3y8=
+			H90DmBTjP4GbQ4Z6z/zpoLXVyebvOcD9uJnRI1obshc=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qHd/7iy+VjUkhAsVacHXoPcBvvOg9CFwOTaIizO9aGY=
+			EfJ1AazMaGKsgGsb01xoQkUO/DILkN+5M3/Zykacbxw=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mCjM4HZ/lhNMDXlGmX9OzMzPulUQOvbR+AO4ALFPcQg=
+			RTXyML9O3H7Q2yoC3yFWyxMKtdN7LLw9fstPKZwJ08o=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qHd/7iy+VjUkhAsVacHXoPcBvvOg9CFwOTaIizO9aGY=
+			EfJ1AazMaGKsgGsb01xoQkUO/DILkN+5M3/Zykacbxw=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GboVZlxaBiUP420Siq6m3zi5TJ02NHesgoyx9kFDvkg=
+			j4hUHWTlU7o4qbjpXU3+kDUS15nPnHvLVNK+1no2k1k=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgzIuL208uoa/VhcsA+te/S4ai1J50Pav9JDH0RT3y8=
+			H90DmBTjP4GbQ4Z6z/zpoLXVyebvOcD9uJnRI1obshc=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7DqWnYHs+ZUzILBiuS9+WMq9OZDJfgnrTKAsoVW5Sg=
+			iyok4cs6zPIMYev7rjCp34eccg0wyz+qU0ReC15XiMQ=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bh/Mrdlf0V0hZXfYUYYYjX3HCCFoGkv8rR7xp/j+OCU=
+			TgWPvB/J9/nRwVs3Qx6+l6O2S++TQUyqQHddpXXk+WQ=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z7DqWnYHs+ZUzILBiuS9+WMq9OZDJfgnrTKAsoVW5Sg=
+			iyok4cs6zPIMYev7rjCp34eccg0wyz+qU0ReC15XiMQ=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVg2e6EUFT+7QSKhpKkwNS2js4Y5zu7hzin3ZpW0dVQ=
+			pFm78m8/tbFemYvwLMp5CIJ1+Wan7kgDFfVQTAE+YEI=
 			</data>
 		</dict>
 	</dict>
