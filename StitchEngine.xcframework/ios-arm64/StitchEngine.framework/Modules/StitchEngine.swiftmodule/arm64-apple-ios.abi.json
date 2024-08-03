@@ -1990,7 +1990,7 @@
           {
             "kind": "Function",
             "name": "getChangedDownstreamNodeIds",
-            "printedName": "getChangedDownstreamNodeIds(evalResult:outputCoordinates:)",
+            "printedName": "getChangedDownstreamNodeIds(evalResult:sourceNode:existingOutputsValues:outputCoordinates:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2012,6 +2012,32 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Node"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.Node.InputRow.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.Node.InputRow.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.InputRow.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Array",
                 "printedName": "[τ_0_0.Node.OutputRow.RowID]",
                 "children": [
@@ -2025,8 +2051,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult17outputCoordinatesShy0H0_2IDQZGAG_04EvalK0QZ_SayAG_8InputRow06OutputqN0QZGtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult17outputCoordinatesShy0H0_2IDQZGAG_04EvalK0QZ_SayAG_8InputRow06OutputqN0QZGtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_8InputRow8PortDataQZGGSayAI_AP06OutputuR0QZGtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_8InputRow8PortDataQZGGSayAI_AP06OutputuR0QZGtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -3041,6 +3067,48 @@
           },
           {
             "kind": "Var",
+            "name": "requiresOutputValuesChange",
+            "printedName": "requiresOutputValuesChange",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "inputsValuesList",
             "printedName": "inputsValuesList",
             "children": [
@@ -3105,6 +3173,80 @@
                 "declKind": "Accessor",
                 "usr": "s:12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
                 "mangledName": "$s12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "outputsValuesList",
+            "printedName": "outputsValuesList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.InputRow.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.InputRow.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "moduleName": "StitchEngine",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[τ_0_0.InputRow.PortData]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0.InputRow.PortData]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.InputRow.PortData"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
