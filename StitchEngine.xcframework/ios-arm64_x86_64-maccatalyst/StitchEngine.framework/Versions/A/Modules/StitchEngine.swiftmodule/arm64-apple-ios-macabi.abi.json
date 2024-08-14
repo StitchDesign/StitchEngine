@@ -1786,6 +1786,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -3135,13 +3138,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
-            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "usr": "s:12StitchEngine16NodeCalculatableP16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
             "moduleName": "StitchEngine",
+            "protocolReq": true,
             "declAttributes": [
               "Custom"
             ],
-            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3171,12 +3174,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
-                "mangledName": "$s12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "usr": "s:12StitchEngine16NodeCalculatableP16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "isFromExtension": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
             ]

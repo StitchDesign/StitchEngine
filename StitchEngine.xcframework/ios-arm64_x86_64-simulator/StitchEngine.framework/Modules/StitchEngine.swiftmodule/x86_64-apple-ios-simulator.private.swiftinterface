@@ -26,7 +26,7 @@ public protocol GraphCalculatable<Node> : AnyObject {
   var nodes: [Self.Node.ID : Self.Node] { get set }
   var shouldResortPreviewLayers: Swift.Bool { get set }
   func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  func updateOrderedPreviewLayers()
+  @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
 }
@@ -38,7 +38,7 @@ public protocol GraphCalculatable : AnyObject {
   var nodes: [Self.Node.ID : Self.Node] { get set }
   var shouldResortPreviewLayers: Swift.Bool { get set }
   func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  func updateOrderedPreviewLayers()
+  @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
 }
@@ -73,6 +73,7 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
+  @_Concurrency.MainActor var inputsValuesList: [[Self.InputRow.PortData]] { get }
 }
 #else
 public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
@@ -91,6 +92,7 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
+  @_Concurrency.MainActor var inputsValuesList: [[Self.InputRow.PortData]] { get }
 }
 #endif
 #if compiler(>=5.3) && $PrimaryAssociatedTypes2
