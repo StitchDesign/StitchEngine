@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios17.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StitchEngine
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Swift
 import _Concurrency
@@ -25,8 +26,8 @@ public protocol GraphCalculatable<Node> : AnyObject {
   var topologicalData: Self.TopologicalData { get set }
   var nodes: [Self.Node.ID : Self.Node] { get set }
   var shouldResortPreviewLayers: Swift.Bool { get set }
-  func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  func updateOrderedPreviewLayers()
+  @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
+  @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
 }
@@ -37,8 +38,8 @@ public protocol GraphCalculatable : AnyObject {
   var topologicalData: Self.TopologicalData { get set }
   var nodes: [Self.Node.ID : Self.Node] { get set }
   var shouldResortPreviewLayers: Swift.Bool { get set }
-  func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  func updateOrderedPreviewLayers()
+  @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
+  @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
 }
@@ -60,7 +61,7 @@ extension StitchEngine.GraphCalculatable {
 public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identifiable {
   associatedtype InputRow : StitchEngine.InputNodeRowCalculatable where Self.ID == Self.InputRow.OutputRowID.NodeId, Self.InputRow.OutputRowID == Self.OutputRow.RowID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.OutputRowID.NodeId == Self.InputRow.RowID.NodeId
   associatedtype OutputRow : StitchEngine.NodeRowCalculatable
-  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self == Self.EvalResult.Node
+  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self.EvalResult.PortData == Self.InputRow.PortData
   typealias InputPortData = Self.InputRow.PortData
   typealias NodeId = Self.InputRow.RowID.NodeId
   typealias PortData = Self.InputRow.PortData
@@ -73,12 +74,13 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
+  @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
 }
 #else
 public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   associatedtype InputRow : StitchEngine.InputNodeRowCalculatable where Self.ID == Self.InputRow.OutputRowID.NodeId, Self.InputRow.OutputRowID == Self.OutputRow.RowID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.OutputRowID.NodeId == Self.InputRow.RowID.NodeId
   associatedtype OutputRow : StitchEngine.NodeRowCalculatable
-  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self == Self.EvalResult.Node
+  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self.EvalResult.PortData == Self.InputRow.PortData
   typealias InputPortData = Self.InputRow.PortData
   typealias NodeId = Self.InputRow.RowID.NodeId
   typealias PortData = Self.InputRow.PortData
@@ -91,23 +93,15 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
+  @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
 }
 #endif
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
-public protocol NodeEvalResult<Node> {
-  associatedtype Node : StitchEngine.NodeCalculatable
-  var outputsValues: [[Self.Node.PortData]] { get set }
-  var willEvalAgain: Swift.Bool { get set }
-  var mustEvalAllDownstreamNodes: Swift.Bool { get set }
-}
-#else
 public protocol NodeEvalResult {
-  associatedtype Node : StitchEngine.NodeCalculatable
-  var outputsValues: [[Self.Node.PortData]] { get set }
+  associatedtype PortData : Swift.Equatable
+  var outputsValues: [[Self.PortData]] { get set }
   var willEvalAgain: Swift.Bool { get set }
   var mustEvalAllDownstreamNodes: Swift.Bool { get set }
 }
-#endif
 public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable {
   associatedtype RowID : StitchEngine.NodeRowId
   associatedtype PortData : Swift.Equatable

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "StitchEngine",
+    "printedName": "StitchEngine",
     "children": [
       {
         "kind": "Import",
@@ -1140,6 +1140,22 @@
         "sugared_genericSig": "<ID where ID : Swift.Hashable, ID : Swift.Identifiable>",
         "declAttributes": [
           "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1360,6 +1376,20 @@
         "genericSig": "<τ_0_0 where τ_0_0 : Swift.Hashable, τ_0_0 : Swift.Identifiable>",
         "sugared_genericSig": "<ID where ID : Swift.Hashable, ID : Swift.Identifiable>",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Sendable",
@@ -1765,6 +1795,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1786,6 +1819,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2051,8 +2087,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_8InputRow8PortDataQZGGSayAI_AP06OutputuR0QZGtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_8InputRow8PortDataQZGGSayAI_AP06OutputuR0QZGtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AM8PortDataQZGGSayAI_8InputRow06OutputwR0QZGtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AM8PortDataQZGGSayAI_8InputRow06OutputwR0QZGtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2101,8 +2137,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_8InputRow8PortDataQZG_AG_AK06OutputoM0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_8InputRow8PortDataQZG_AG_AK06OutputoM0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_10EvalResult8PortDataQZG_AG_8InputRow06OutputsM0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_10EvalResult8PortDataQZG_AG_8InputRow06OutputsM0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2680,6 +2716,22 @@
         "sugared_genericSig": "<Self : AnyObject, Self.Node : StitchEngine.NodeCalculatable>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2760,8 +2812,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay8InputRow_8PortDataQZGG_tF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay8InputRow_8PortDataQZGG_tF",
+            "usr": "s:12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay10EvalResult_8PortDataQZGG_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay10EvalResult_8PortDataQZGG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
@@ -3115,17 +3167,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[[τ_0_0.InputRow.PortData]]",
+                "printedName": "[[τ_0_0.EvalResult.PortData]]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[τ_0_0.InputRow.PortData]",
+                    "printedName": "[τ_0_0.EvalResult.PortData]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.PortData"
+                        "printedName": "τ_0_0.EvalResult.PortData"
                       }
                     ],
                     "usr": "s:Sa"
@@ -3135,13 +3187,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
-            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "usr": "s:12StitchEngine16NodeCalculatableP16inputsValuesListSaySay10EvalResult_8PortDataQZGGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsValuesListSaySay10EvalResult_8PortDataQZGGvp",
             "moduleName": "StitchEngine",
+            "protocolReq": true,
             "declAttributes": [
               "Custom"
             ],
-            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3151,17 +3203,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[[τ_0_0.InputRow.PortData]]",
+                    "printedName": "[[τ_0_0.EvalResult.PortData]]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[τ_0_0.InputRow.PortData]",
+                        "printedName": "[τ_0_0.EvalResult.PortData]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.InputRow.PortData"
+                            "printedName": "τ_0_0.EvalResult.PortData"
                           }
                         ],
                         "usr": "s:Sa"
@@ -3171,12 +3223,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
-                "mangledName": "$s12StitchEngine16NodeCalculatablePAAE16inputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "usr": "s:12StitchEngine16NodeCalculatableP16inputsValuesListSaySay10EvalResult_8PortDataQZGGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsValuesListSaySay10EvalResult_8PortDataQZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "isFromExtension": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
             ]
@@ -3189,17 +3242,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[[τ_0_0.InputRow.PortData]]",
+                "printedName": "[[τ_0_0.EvalResult.PortData]]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[τ_0_0.InputRow.PortData]",
+                    "printedName": "[τ_0_0.EvalResult.PortData]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.PortData"
+                        "printedName": "τ_0_0.EvalResult.PortData"
                       }
                     ],
                     "usr": "s:Sa"
@@ -3209,8 +3262,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvp",
-            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvp",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay10EvalResult_8PortDataQZGGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay10EvalResult_8PortDataQZGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "Custom"
@@ -3225,17 +3278,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[[τ_0_0.InputRow.PortData]]",
+                    "printedName": "[[τ_0_0.EvalResult.PortData]]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[τ_0_0.InputRow.PortData]",
+                        "printedName": "[τ_0_0.EvalResult.PortData]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.InputRow.PortData"
+                            "printedName": "τ_0_0.EvalResult.PortData"
                           }
                         ],
                         "usr": "s:Sa"
@@ -3245,8 +3298,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvg",
-                "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay8InputRow_8PortDataQZGGvg",
+                "usr": "s:12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay10EvalResult_8PortDataQZGGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatablePAAE17outputsValuesListSaySay10EvalResult_8PortDataQZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
@@ -3318,12 +3371,26 @@
         "usr": "s:12StitchEngine16NodeCalculatableP",
         "mangledName": "$s12StitchEngine16NodeCalculatableP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0 == τ_0_0.EvalResult.Node, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.OutputRowID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.RowID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.OutputRowID.NodeId == τ_0_0.InputRow.RowID.NodeId>",
-        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self == Self.EvalResult.Node, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.OutputRowID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.InputRow.OutputRowID == Self.OutputRow.RowID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.OutputRowID.NodeId == Self.InputRow.RowID.NodeId>",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.OutputRowID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.EvalResult.PortData == τ_0_0.InputRow.PortData, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.RowID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.OutputRowID.NodeId == τ_0_0.InputRow.RowID.NodeId>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.OutputRowID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.EvalResult.PortData == Self.InputRow.PortData, Self.InputRow.OutputRowID == Self.OutputRow.RowID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.OutputRowID.NodeId == Self.InputRow.RowID.NodeId>",
         "declAttributes": [
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Identifiable",
@@ -3350,11 +3417,11 @@
         "children": [
           {
             "kind": "AssociatedType",
-            "name": "Node",
-            "printedName": "Node",
+            "name": "PortData",
+            "printedName": "PortData",
             "declKind": "AssociatedType",
-            "usr": "s:12StitchEngine14NodeEvalResultP0C0Qa",
-            "mangledName": "$s12StitchEngine14NodeEvalResultP0C0Qa",
+            "usr": "s:12StitchEngine14NodeEvalResultP8PortDataQa",
+            "mangledName": "$s12StitchEngine14NodeEvalResultP8PortDataQa",
             "moduleName": "StitchEngine",
             "protocolReq": true
           },
@@ -3366,17 +3433,17 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[[τ_0_0.Node.InputRow.PortData]]",
+                "printedName": "[[τ_0_0.PortData]]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[τ_0_0.Node.InputRow.PortData]",
+                    "printedName": "[τ_0_0.PortData]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DependentMember",
-                        "printedName": "τ_0_0.Node.InputRow.PortData"
+                        "printedName": "τ_0_0.PortData"
                       }
                     ],
                     "usr": "s:Sa"
@@ -3386,8 +3453,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvp",
-            "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvp",
+            "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvp",
+            "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
             "accessors": [
@@ -3399,17 +3466,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[[τ_0_0.Node.InputRow.PortData]]",
+                    "printedName": "[[τ_0_0.PortData]]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[τ_0_0.Node.InputRow.PortData]",
+                        "printedName": "[τ_0_0.PortData]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.Node.InputRow.PortData"
+                            "printedName": "τ_0_0.PortData"
                           }
                         ],
                         "usr": "s:Sa"
@@ -3419,8 +3486,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvg",
-                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvg",
+                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvg",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
@@ -3441,17 +3508,17 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[[τ_0_0.Node.InputRow.PortData]]",
+                    "printedName": "[[τ_0_0.PortData]]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[τ_0_0.Node.InputRow.PortData]",
+                        "printedName": "[τ_0_0.PortData]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.Node.InputRow.PortData"
+                            "printedName": "τ_0_0.PortData"
                           }
                         ],
                         "usr": "s:Sa"
@@ -3461,8 +3528,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvs",
-                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvs",
+                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvs",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
@@ -3482,8 +3549,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvM",
-                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay0C0_8InputRow8PortDataQZGGvM",
+                "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvM",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
@@ -3681,10 +3748,26 @@
         "usr": "s:12StitchEngine14NodeEvalResultP",
         "mangledName": "$s12StitchEngine14NodeEvalResultP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0.Node : StitchEngine.NodeCalculatable>",
-        "sugared_genericSig": "<Self.Node : StitchEngine.NodeCalculatable>",
+        "genericSig": "<τ_0_0.PortData : Swift.Equatable>",
+        "sugared_genericSig": "<Self.PortData : Swift.Equatable>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4017,6 +4100,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Identifiable",
@@ -4359,6 +4456,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "NodeRowCalculatable",
             "printedName": "NodeRowCalculatable",
             "usr": "s:12StitchEngine19NodeRowCalculatableP",
@@ -4630,6 +4741,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -7212,6 +7337,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7355,6 +7496,20 @@
         "sugared_genericSig": "<Self : Swift.Sequence, Self.Element == Self.SubSequence.Element, Self.Index : Swift.Comparable, Self.Index == Self.Indices.Element, Self.Indices : Swift.Collection, Self.Indices == Self.Indices.SubSequence, Self.SubSequence : Swift.Collection, Self.SubSequence == Self.SubSequence.SubSequence, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index>",
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Sequence",
