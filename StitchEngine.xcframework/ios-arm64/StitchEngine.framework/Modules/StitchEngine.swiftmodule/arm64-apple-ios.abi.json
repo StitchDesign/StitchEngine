@@ -1885,6 +1885,30 @@
           },
           {
             "kind": "Function",
+            "name": "evaluateComponentOutputs",
+            "printedName": "evaluateComponentOutputs()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine17GraphCalculatableP24evaluateComponentOutputsyyF",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP24evaluateComponentOutputsyyF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "calculate",
             "printedName": "calculate(from:)",
             "children": [
@@ -2093,6 +2117,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "declAttributes": [
+              "AccessControl",
               "Custom",
               "RawDocComment"
             ],
@@ -2102,7 +2127,7 @@
           {
             "kind": "Function",
             "name": "updateDownstreamInputs",
-            "printedName": "updateDownstreamInputs(flowValues:outputCoordinate:)",
+            "printedName": "updateDownstreamInputs(sourceNode:flowValues:outputCoordinate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2116,6 +2141,11 @@
                   }
                 ],
                 "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Node"
               },
               {
                 "kind": "TypeNominal",
@@ -2137,8 +2167,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_10EvalResult8PortDataQZG_AG_8InputRow06OutputsM0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10flowValues16outputCoordinateShy4Node_2IDQZGSayAG_10EvalResult8PortDataQZG_AG_8InputRow06OutputsM0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_8InputRow06OutputtN0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_8InputRow06OutputtN0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2857,38 +2887,9 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "outputsUpdated",
-            "printedName": "outputsUpdated(evalResult:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.EvalResult"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP14outputsUpdated10evalResulty04EvalH0Qz_tF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP14outputsUpdated10evalResulty04EvalH0Qz_tF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getAllInputsObservers",
-            "printedName": "getAllInputsObservers()",
+            "kind": "Var",
+            "name": "inputsObservers",
+            "printedName": "inputsObservers",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2904,23 +2905,106 @@
                 "usr": "s:Sa"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP21getAllInputsObserversSay8InputRowQzGyF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP21getAllInputsObserversSay8InputRowQzGyF",
+            "declKind": "Var",
+            "usr": "s:12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvp",
             "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
             "protocolReq": true,
             "declAttributes": [
               "Custom"
             ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.InputRow]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.InputRow]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvs",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvM",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP15inputsObserversSay8InputRowQzGvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
-            "kind": "Function",
-            "name": "getAllOutputsObservers",
-            "printedName": "getAllOutputsObservers()",
+            "kind": "Var",
+            "name": "outputsObservers",
+            "printedName": "outputsObservers",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2936,18 +3020,101 @@
                 "usr": "s:Sa"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP22getAllOutputsObserversSay9OutputRowQzGyF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP22getAllOutputsObserversSay9OutputRowQzGyF",
+            "declKind": "Var",
+            "usr": "s:12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvp",
             "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
             "protocolReq": true,
             "declAttributes": [
               "Custom"
             ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.OutputRow]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.OutputRow"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.OutputRow]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.OutputRow"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvs",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvM",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP16outputsObserversSay9OutputRowQzGvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -3236,6 +3403,48 @@
           },
           {
             "kind": "Var",
+            "name": "isComponentOutputSplitter",
+            "printedName": "isComponentOutputSplitter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine16NodeCalculatableP25isComponentOutputSplitterSbvp",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP25isComponentOutputSplitterSbvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine16NodeCalculatableP25isComponentOutputSplitterSbvg",
+                "mangledName": "$s12StitchEngine16NodeCalculatableP25isComponentOutputSplitterSbvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "outputsValuesList",
             "printedName": "outputsValuesList",
             "children": [
@@ -3365,6 +3574,50 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "updateOutputsObservers",
+            "printedName": "updateOutputsObservers(newOutputsValues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.InputRow.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.InputRow.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE22updateOutputsObservers03newF6ValuesySaySay10EvalResult_8PortDataQZGG_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE22updateOutputsObservers03newF6ValuesySaySay10EvalResult_8PortDataQZGG_tF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -4006,9 +4259,51 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "containsUpstreamConnection",
+            "printedName": "containsUpstreamConnection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine19NodeRowCalculatableP26containsUpstreamConnectionSbvp",
+            "mangledName": "$s12StitchEngine19NodeRowCalculatableP26containsUpstreamConnectionSbvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine19NodeRowCalculatableP26containsUpstreamConnectionSbvg",
+                "mangledName": "$s12StitchEngine19NodeRowCalculatableP26containsUpstreamConnectionSbvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
-            "name": "didInputsUpdate",
-            "printedName": "didInputsUpdate(newValues:oldValues:)",
+            "name": "updateValues",
+            "printedName": "updateValues(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4027,66 +4322,16 @@
                   }
                 ],
                 "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[τ_0_0.PortData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.PortData"
-                  }
-                ],
-                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine19NodeRowCalculatableP15didInputsUpdate9newValues03oldJ0ySay8PortDataQzG_AItF",
-            "mangledName": "$s12StitchEngine19NodeRowCalculatableP15didInputsUpdate9newValues03oldJ0ySay8PortDataQzG_AItF",
+            "usr": "s:12StitchEngine19NodeRowCalculatableP12updateValuesyySay8PortDataQzGF",
+            "mangledName": "$s12StitchEngine19NodeRowCalculatableP12updateValuesyySay8PortDataQzGF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setValuesInInput",
-            "printedName": "setValuesInInput(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[τ_0_0.PortData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.PortData"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine19NodeRowCalculatablePAAE16setValuesInInputyySay8PortDataQzGF",
-            "mangledName": "$s12StitchEngine19NodeRowCalculatablePAAE16setValuesInInputyySay8PortDataQzGF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -4384,7 +4629,7 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
             "protocolReq": true,
-            "overriding": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -4442,6 +4687,87 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "containsUpstreamConnection",
+            "printedName": "containsUpstreamConnection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine24InputNodeRowCalculatablePAAE26containsUpstreamConnectionSbvp",
+            "mangledName": "$s12StitchEngine24InputNodeRowCalculatablePAAE26containsUpstreamConnectionSbvp",
+            "moduleName": "StitchEngine",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24InputNodeRowCalculatablePAAE26containsUpstreamConnectionSbvg",
+                "mangledName": "$s12StitchEngine24InputNodeRowCalculatablePAAE26containsUpstreamConnectionSbvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setValuesInInput",
+            "printedName": "setValuesInInput(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.PortData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.PortData"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine24InputNodeRowCalculatablePAAE011setValuesInC0yySay8PortDataQzGF",
+            "mangledName": "$s12StitchEngine24InputNodeRowCalculatablePAAE011setValuesInC0yySay8PortDataQzGF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -7411,6 +7737,799 @@
         "mangledName": "$s12StitchEngine13assertInDebugyySbF",
         "moduleName": "StitchEngine",
         "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Array",
+        "printedName": "Array",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "values",
+            "printedName": "values",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sa12StitchEngineAA19NodeRowCalculatableRzlE6valuesSaySay8PortDataQzGGvp",
+            "mangledName": "$sSa12StitchEngineAA19NodeRowCalculatableRzlE6valuesSaySay8PortDataQzGGvp",
+            "moduleName": "StitchEngine",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[τ_0_0.PortData]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0.PortData]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.PortData"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sa12StitchEngineAA19NodeRowCalculatableRzlE6valuesSaySay8PortDataQzGGvg",
+                "mangledName": "$sSa12StitchEngineAA19NodeRowCalculatableRzlE6valuesSaySay8PortDataQzGGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
+                "sugared_genericSig": "<Element where Element : StitchEngine.NodeRowCalculatable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "updateAllValues",
+            "printedName": "updateAllValues(_:nodeDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sa12StitchEngineAA19NodeRowCalculatableRzlE15updateAllValues_12nodeDelegateySaySay8PortDataQzGG_qd__tAA0cE0Rd__10EvalResult_AEQYd__AFRSlF",
+            "mangledName": "$sSa12StitchEngineAA19NodeRowCalculatableRzlE15updateAllValues_12nodeDelegateySaySay8PortDataQzGG_qd__tAA0cE0Rd__10EvalResult_AEQYd__AFRSlF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : StitchEngine.NodeRowCalculatable, τ_1_0 : StitchEngine.NodeCalculatable, τ_0_0.PortData == τ_1_0.EvalResult.PortData>",
+            "sugared_genericSig": "<Element, Node where Element : StitchEngine.NodeRowCalculatable, Node : StitchEngine.NodeCalculatable, Element.PortData == Node.EvalResult.PortData>",
+            "declAttributes": [
+              "Mutating",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:Sa",
+        "mangledName": "$sSa",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Element>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_DestructorSafeContainer",
+            "printedName": "_DestructorSafeContainer",
+            "usr": "s:s24_DestructorSafeContainerP",
+            "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ArrayProtocol",
+            "printedName": "_ArrayProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Buffer",
+                "printedName": "_Buffer",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ArrayBuffer",
+                    "printedName": "Swift._ArrayBuffer<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s12_ArrayBufferV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s14_ArrayProtocolP",
+            "mangledName": "$ss14_ArrayProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",

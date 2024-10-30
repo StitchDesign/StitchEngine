@@ -14,7 +14,8 @@ extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func calculate(_ idList: [Self.Node.ID])
 }
 extension StitchEngine.GraphCalculatable {
-  @_Concurrency.MainActor public func updateDownstreamInputs(flowValues: [Self.Node.PortData], outputCoordinate: Self.Node.OutputRow.RowID) -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor public func getChangedDownstreamNodeIds(evalResult: Self.Node.EvalResult, sourceNode: Self.Node, existingOutputsValues: [[Self.Node.PortData]], outputCoordinates: [Self.Node.OutputRow.RowID]) -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor public func updateDownstreamInputs(sourceNode: Self.Node, flowValues: [Self.Node.PortData], outputCoordinate: Self.Node.OutputRow.RowID) -> Swift.Set<Self.Node.ID>
 }
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func updateTopologicalData()
@@ -30,6 +31,7 @@ public protocol GraphCalculatable<Node> : AnyObject {
   @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func evaluateComponentOutputs()
 }
 #else
 public protocol GraphCalculatable : AnyObject {
@@ -42,6 +44,7 @@ public protocol GraphCalculatable : AnyObject {
   @_Concurrency.MainActor func updateOrderedPreviewLayers()
   func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func evaluateComponentOutputs()
 }
 #endif
 extension StitchEngine.GraphCalculatable {
@@ -67,14 +70,14 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   typealias PortData = Self.InputRow.PortData
   @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.InputPortData]])
   @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
-  @_Concurrency.MainActor func outputsUpdated(evalResult: Self.EvalResult)
-  @_Concurrency.MainActor func getAllInputsObservers() -> [Self.InputRow]
-  @_Concurrency.MainActor func getAllOutputsObservers() -> [Self.OutputRow]
+  @_Concurrency.MainActor var inputsObservers: [Self.InputRow] { get set }
+  @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
   @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
+  var isComponentOutputSplitter: Swift.Bool { get }
 }
 #else
 public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
@@ -86,14 +89,14 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   typealias PortData = Self.InputRow.PortData
   @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.InputPortData]])
   @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
-  @_Concurrency.MainActor func outputsUpdated(evalResult: Self.EvalResult)
-  @_Concurrency.MainActor func getAllInputsObservers() -> [Self.InputRow]
-  @_Concurrency.MainActor func getAllOutputsObservers() -> [Self.OutputRow]
+  @_Concurrency.MainActor var inputsObservers: [Self.InputRow] { get set }
+  @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   var id: Self.NodeId { get set }
   var isGroupNode: Swift.Bool { get }
   var requiresOutputValuesChange: Swift.Bool { get }
   @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
+  var isComponentOutputSplitter: Swift.Bool { get }
 }
 #endif
 public protocol NodeEvalResult {
@@ -107,7 +110,8 @@ public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable {
   associatedtype PortData : Swift.Equatable
   var id: Self.RowID { get set }
   var values: [Self.PortData] { get set }
-  func didInputsUpdate(newValues: [Self.PortData], oldValues: [Self.PortData])
+  var containsUpstreamConnection: Swift.Bool { get }
+  func updateValues(_ values: [Self.PortData])
 }
 public protocol InputNodeRowCalculatable : StitchEngine.NodeRowCalculatable {
   associatedtype OutputRowID : StitchEngine.NodeRowId
@@ -116,8 +120,18 @@ public protocol InputNodeRowCalculatable : StitchEngine.NodeRowCalculatable {
   func didInputsUpdate(newValues: [Self.PortData], oldValues: [Self.PortData])
   var upstreamOutputCoordinate: Self.OutputRowID? { get }
 }
-extension StitchEngine.NodeRowCalculatable {
+extension StitchEngine.InputNodeRowCalculatable {
+  public var containsUpstreamConnection: Swift.Bool {
+    get
+  }
+}
+extension StitchEngine.InputNodeRowCalculatable {
   @_Concurrency.MainActor public func setValuesInInput(_ values: [Self.PortData])
+}
+extension Swift.Array where Element : StitchEngine.NodeRowCalculatable {
+  public var values: [[Element.PortData]] {
+    get
+  }
 }
 #if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol NodeRowId<NodeId> : Swift.Hashable, Swift.Identifiable {
