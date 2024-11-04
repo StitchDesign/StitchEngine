@@ -1450,12 +1450,12 @@
                     "printedName": "τ_0_0.Node"
                   }
                 ],
-                "usr": "s:12StitchEngine20GraphTopologicalDataV"
+                "usr": "s:12StitchEngine20GraphTopologicalDataC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvp",
-            "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvp",
+            "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Cy4NodeQzGvp",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Cy4NodeQzGvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
             "accessors": [
@@ -1475,74 +1475,18 @@
                         "printedName": "τ_0_0.Node"
                       }
                     ],
-                    "usr": "s:12StitchEngine20GraphTopologicalDataV"
+                    "usr": "s:12StitchEngine20GraphTopologicalDataC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvg",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvg",
+                "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Cy4NodeQzGvg",
+                "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Cy4NodeQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GraphTopologicalData",
-                    "printedName": "StitchEngine.GraphTopologicalData<τ_0_0.Node>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.Node"
-                      }
-                    ],
-                    "usr": "s:12StitchEngine20GraphTopologicalDataV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvs",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvM",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP15topologicalDataAA0c11TopologicalF0Vy4NodeQzGvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -1663,6 +1607,142 @@
                 "declKind": "Accessor",
                 "usr": "s:12StitchEngine17GraphCalculatableP5nodesSDy4Node_2IDQZAEQzGvM",
                 "mangledName": "$s12StitchEngine17GraphCalculatableP5nodesSDy4Node_2IDQZAEQzGvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "portsToUpdate",
+            "printedName": "portsToUpdate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NodePortType",
+                    "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node"
+                      }
+                    ],
+                    "usr": "s:12StitchEngine12NodePortTypeO"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvp",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Node"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvg",
+                "mangledName": "$s12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Node"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvs",
+                "mangledName": "$s12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvM",
+                "mangledName": "$s12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2049,18 +2129,18 @@
           },
           {
             "kind": "Function",
-            "name": "getChangedDownstreamNodeIds",
-            "printedName": "getChangedDownstreamNodeIds(evalResult:sourceNode:existingOutputsValues:outputCoordinates:)",
+            "name": "getChangedDownstreamInputIds",
+            "printedName": "getChangedDownstreamInputIds(evalResult:sourceNode:existingOutputsValues:outputCoordinates:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Set",
-                "printedName": "Swift.Set<τ_0_0.Node.ID>",
+                "printedName": "Swift.Set<τ_0_0.Node.InputRow.ID>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DependentMember",
-                    "printedName": "τ_0_0.Node.ID"
+                    "printedName": "τ_0_0.Node.InputRow.ID"
                   }
                 ],
                 "usr": "s:Sh"
@@ -2111,8 +2191,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AM8PortDataQZGGSayAI_8InputRow06OutputwR0QZGtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE27getChangedDownstreamNodeIds10evalResult06sourceH021existingOutputsValues17outputCoordinatesShy0H0_2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AM8PortDataQZGGSayAI_8InputRow06OutputwR0QZGtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE28getChangedDownstreamInputIds10evalResult10sourceNode21existingOutputsValues17outputCoordinatesShy0M0_0H3Row2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AN8PortDataQZGGSayAI_AJ06OutputsT0QZGtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE28getChangedDownstreamInputIds10evalResult10sourceNode21existingOutputsValues17outputCoordinatesShy0M0_0H3Row2IDQZGAI_04EvalK0QZ_AIQzSaySayAI_AN8PortDataQZGGSayAI_AJ06OutputsT0QZGtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2132,12 +2212,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Set",
-                "printedName": "Swift.Set<τ_0_0.Node.ID>",
+                "printedName": "Swift.Set<τ_0_0.Node.InputRow.ID>",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DependentMember",
-                    "printedName": "τ_0_0.Node.ID"
+                    "printedName": "τ_0_0.Node.InputRow.ID"
                   }
                 ],
                 "usr": "s:Sh"
@@ -2167,8 +2247,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_8InputRow06OutputtN0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_8InputRow06OutputtN0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_8InputRow2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_AI06OutputoP0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_8InputRow2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_AI06OutputoP0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2187,16 +2267,16 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<τ_0_0.Node.ID>",
+                "name": "Optional",
+                "printedName": "τ_0_0.Node.EvalResult?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DependentMember",
-                    "printedName": "τ_0_0.Node.ID"
+                    "printedName": "τ_0_0.Node.EvalResult"
                   }
                 ],
-                "usr": "s:Sh"
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2205,8 +2285,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE13calculateNodeyShy0F0_2IDQZGAEQzF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE13calculateNodeyShy0F0_2IDQZGAEQzF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE13calculateNodey0F0_10EvalResultQZSgAEQzF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE13calculateNodey0F0_10EvalResultQZSgAEQzF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2273,8 +2353,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE17createConnectionsSDy4Node_8InputRow06OutputI2IDQZShyAE_AF0iK0QZGGyF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE17createConnectionsSDy4Node_8InputRow06OutputI2IDQZShyAE_AF0iK0QZGGyF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE17createConnectionsSDy4Node_8InputRow06OutputI2IDQZShyAE_AF0K0QZGGyF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE17createConnectionsSDy4Node_8InputRow06OutputI2IDQZShyAE_AF0K0QZGGyF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2292,7 +2372,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[τ_0_0.Node.InputRow.OutputRowID : Swift.Set<τ_0_0.Node.InputRow.RowID>]",
+                "printedName": "[τ_0_0.Node.InputRow.OutputRowID : Swift.Set<τ_0_0.Node.InputRow.ID>]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2302,12 +2382,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Set",
-                    "printedName": "Swift.Set<τ_0_0.Node.InputRow.RowID>",
+                    "printedName": "Swift.Set<τ_0_0.Node.InputRow.ID>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DependentMember",
-                        "printedName": "τ_0_0.Node.InputRow.RowID"
+                        "printedName": "τ_0_0.Node.InputRow.ID"
                       }
                     ],
                     "usr": "s:Sh"
@@ -2317,8 +2397,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0hJ0QZGGvp",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0hJ0QZGGvp",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0J0QZGGvp",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0J0QZGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "AccessControl"
@@ -2333,7 +2413,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[τ_0_0.Node.InputRow.OutputRowID : Swift.Set<τ_0_0.Node.InputRow.RowID>]",
+                    "printedName": "[τ_0_0.Node.InputRow.OutputRowID : Swift.Set<τ_0_0.Node.InputRow.ID>]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2343,12 +2423,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Set",
-                        "printedName": "Swift.Set<τ_0_0.Node.InputRow.RowID>",
+                        "printedName": "Swift.Set<τ_0_0.Node.InputRow.ID>",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.Node.InputRow.RowID"
+                            "printedName": "τ_0_0.Node.InputRow.ID"
                           }
                         ],
                         "usr": "s:Sh"
@@ -2358,8 +2438,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0hJ0QZGGvg",
-                "mangledName": "$s12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0hJ0QZGGvg",
+                "usr": "s:12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0J0QZGGvg",
+                "mangledName": "$s12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0J0QZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2490,8 +2570,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE14setConnectionsyySDy4Node_8InputRow06OutputI2IDQZShyAE_AF0iK0QZGGF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE14setConnectionsyySDy4Node_8InputRow06OutputI2IDQZShyAE_AF0iK0QZGGF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE14setConnectionsyySDy4Node_8InputRow06OutputI2IDQZShyAE_AF0K0QZGGF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE14setConnectionsyySDy4Node_8InputRow06OutputI2IDQZShyAE_AF0K0QZGGF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2733,6 +2813,30 @@
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "declAttributes": [
               "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePortViews",
+            "printedName": "updatePortViews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE15updatePortViewsyyF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE15updatePortViewsyyF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -3141,8 +3245,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP19getInputRowObserver3for0fG0QzSgAF_0G2ID6PortIdQZ_tF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP19getInputRowObserver3for0fG0QzSgAF_0G2ID6PortIdQZ_tF",
+            "usr": "s:12StitchEngine16NodeCalculatableP19getInputRowObserver3for0fG0QzSgAF_2ID6PortIdQZ_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP19getInputRowObserver3for0fG0QzSgAF_2ID6PortIdQZ_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
@@ -3618,14 +3722,38 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePortViewModels",
+            "printedName": "updatePortViewModels()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyF",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
         "usr": "s:12StitchEngine16NodeCalculatableP",
         "mangledName": "$s12StitchEngine16NodeCalculatableP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.OutputRowID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.EvalResult.PortData == τ_0_0.InputRow.PortData, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.RowID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.OutputRowID.NodeId == τ_0_0.InputRow.RowID.NodeId>",
-        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.OutputRowID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.EvalResult.PortData == Self.InputRow.PortData, Self.InputRow.OutputRowID == Self.OutputRow.RowID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.OutputRowID.NodeId == Self.InputRow.RowID.NodeId>",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.ID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.EvalResult.PortData == τ_0_0.InputRow.PortData, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.ID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.ID.NodeId == τ_0_0.InputRow.OutputRowID.NodeId>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.ID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.EvalResult.PortData == Self.InputRow.PortData, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -4060,94 +4188,6 @@
           },
           {
             "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.RowID"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine19NodeRowCalculatableP2id0D2IDQzvp",
-            "mangledName": "$s12StitchEngine19NodeRowCalculatableP2id0D2IDQzvp",
-            "moduleName": "StitchEngine",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.RowID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine19NodeRowCalculatableP2id0D2IDQzvg",
-                "mangledName": "$s12StitchEngine19NodeRowCalculatableP2id0D2IDQzvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.RowID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine19NodeRowCalculatableP2id0D2IDQzvs",
-                "mangledName": "$s12StitchEngine19NodeRowCalculatableP2id0D2IDQzvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine19NodeRowCalculatableP2id0D2IDQzvM",
-                "mangledName": "$s12StitchEngine19NodeRowCalculatableP2id0D2IDQzvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "values",
             "printedName": "values",
             "children": [
@@ -4333,14 +4373,35 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePortViewModels",
+            "printedName": "updatePortViewModels()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyF",
+            "mangledName": "$s12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
         "usr": "s:12StitchEngine19NodeRowCalculatableP",
         "mangledName": "$s12StitchEngine19NodeRowCalculatableP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.PortData : Swift.Equatable, τ_0_0.RowID : StitchEngine.NodeRowId>",
-        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.PortData : Swift.Equatable, Self.RowID : StitchEngine.NodeRowId>",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.ID : StitchEngine.NodeRowId, τ_0_0.ID == τ_0_0.RowID, τ_0_0.PortData : Swift.Equatable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.ID : StitchEngine.NodeRowId, Self.ID == Self.RowID, Self.PortData : Swift.Equatable>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -4382,95 +4443,6 @@
             "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP06OutputE2IDQa",
             "moduleName": "StitchEngine",
             "protocolReq": true
-          },
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.RowID"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvp",
-            "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvp",
-            "moduleName": "StitchEngine",
-            "protocolReq": true,
-            "overriding": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.RowID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvg",
-                "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
-                "protocolReq": true,
-                "overriding": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.RowID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvs",
-                "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
-                "protocolReq": true,
-                "overriding": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvM",
-                "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP2id0E2IDQzvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
-                "protocolReq": true,
-                "overriding": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
           },
           {
             "kind": "Var",
@@ -5105,6 +5077,294 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NodePortType",
+        "printedName": "NodePortType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "input",
+            "printedName": "input",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable> (StitchEngine.NodePortType<τ_0_0>.Type) -> (τ_0_0.InputRow.ID) -> StitchEngine.NodePortType<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0.InputRow.ID) -> StitchEngine.NodePortType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow.ID"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StitchEngine.NodePortType<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12StitchEngine12NodePortTypeO5inputyACyxG8InputRow_2IDQZcAEmAA0C12CalculatableRzlF",
+            "mangledName": "$s12StitchEngine12NodePortTypeO5inputyACyxG8InputRow_2IDQZcAEmAA0C12CalculatableRzlF",
+            "moduleName": "StitchEngine"
+          },
+          {
+            "kind": "Var",
+            "name": "allOutputs",
+            "printedName": "allOutputs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable> (StitchEngine.NodePortType<τ_0_0>.Type) -> (τ_0_0.ID) -> StitchEngine.NodePortType<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0.ID) -> StitchEngine.NodePortType<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.ID"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StitchEngine.NodePortType<τ_0_0>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12StitchEngine12NodePortTypeO10allOutputsyACyxG2IDQzcAEmAA0C12CalculatableRzlF",
+            "mangledName": "$s12StitchEngine12NodePortTypeO10allOutputsyACyxG2IDQzcAEmAA0C12CalculatableRzlF",
+            "moduleName": "StitchEngine"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine12NodePortTypeO9hashValueSivp",
+            "mangledName": "$s12StitchEngine12NodePortTypeO9hashValueSivp",
+            "moduleName": "StitchEngine",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine12NodePortTypeO9hashValueSivg",
+                "mangledName": "$s12StitchEngine12NodePortTypeO9hashValueSivg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+                "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine12NodePortTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12StitchEngine12NodePortTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NodePortType",
+                "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12StitchEngine12NodePortTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NodePortType",
+                "printedName": "StitchEngine.NodePortType<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12StitchEngine12NodePortTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine12NodePortTypeO2eeoiySbACyxG_AEtFZ",
+            "mangledName": "$s12StitchEngine12NodePortTypeO2eeoiySbACyxG_AEtFZ",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12StitchEngine12NodePortTypeO",
+        "mangledName": "$s12StitchEngine12NodePortTypeO",
+        "moduleName": "StitchEngine",
+        "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+        "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5145,12 +5405,12 @@
                     "printedName": "τ_0_0"
                   }
                 ],
-                "usr": "s:12StitchEngine20GraphTopologicalDataV"
+                "usr": "s:12StitchEngine20GraphTopologicalDataC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12StitchEngine20GraphTopologicalDataVACyxGycfc",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataVACyxGycfc",
+            "usr": "s:12StitchEngine20GraphTopologicalDataCACyxGycfc",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataCACyxGycfc",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
@@ -5179,11 +5439,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -5208,12 +5469,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -5241,12 +5505,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -5261,12 +5528,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesForNextC4StepShy2IDQzGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesForNextC4StepShy2IDQzGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -5304,11 +5574,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "RawDocComment"
             ],
@@ -5347,12 +5618,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -5393,12 +5667,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -5413,164 +5690,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV22shallowDownstreamNodesSDy2IDQzShyAFGGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC22shallowDownstreamNodesSDy2IDQzShyAFGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "cachedDownstreamIds",
-            "printedName": "cachedDownstreamIds",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.ID>]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.InputRow.OutputRowID"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Set",
-                    "printedName": "Swift.Set<τ_0_0.ID>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.ID"
-                      }
-                    ],
-                    "usr": "s:Sh"
-                  }
+                "declAttributes": [
+                  "Final"
                 ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvp",
-            "moduleName": "StitchEngine",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.ID>]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.OutputRowID"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Set",
-                        "printedName": "Swift.Set<τ_0_0.ID>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DependentMember",
-                            "printedName": "τ_0_0.ID"
-                          }
-                        ],
-                        "usr": "s:Sh"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.ID>]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.OutputRowID"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Set",
-                        "printedName": "Swift.Set<τ_0_0.ID>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DependentMember",
-                            "printedName": "τ_0_0.ID"
-                          }
-                        ],
-                        "usr": "s:Sh"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19cachedDownstreamIdsSDy8InputRow_06OutputJ2IDQZShy0L0QzGGvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
-                "implicit": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -5603,11 +5731,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "RawDocComment"
             ],
@@ -5641,12 +5770,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -5682,12 +5814,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -5702,12 +5837,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV10nodeCyclesShyShy2IDQzGGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC10nodeCyclesShyShy2IDQzGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -5745,11 +5883,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -5787,12 +5926,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -5833,12 +5975,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -5853,12 +5998,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV18upstreamNodesCacheSDy2IDQzShyAFGGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC18upstreamNodesCacheSDy2IDQzShyAFGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -5871,7 +6019,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.RowID>]",
+                "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.ID>]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5881,12 +6029,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Set",
-                    "printedName": "Swift.Set<τ_0_0.InputRow.RowID>",
+                    "printedName": "Swift.Set<τ_0_0.InputRow.ID>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.RowID"
+                        "printedName": "τ_0_0.InputRow.ID"
                       }
                     ],
                     "usr": "s:Sh"
@@ -5896,11 +6044,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -5913,7 +6062,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.RowID>]",
+                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.ID>]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5923,12 +6072,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Set",
-                        "printedName": "Swift.Set<τ_0_0.InputRow.RowID>",
+                        "printedName": "Swift.Set<τ_0_0.InputRow.ID>",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.InputRow.RowID"
+                            "printedName": "τ_0_0.InputRow.ID"
                           }
                         ],
                         "usr": "s:Sh"
@@ -5938,12 +6087,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -5959,7 +6111,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.RowID>]",
+                    "printedName": "[τ_0_0.InputRow.OutputRowID : Swift.Set<τ_0_0.InputRow.ID>]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5969,12 +6121,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Set",
-                        "printedName": "Swift.Set<τ_0_0.InputRow.RowID>",
+                        "printedName": "Swift.Set<τ_0_0.InputRow.ID>",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DependentMember",
-                            "printedName": "τ_0_0.InputRow.RowID"
+                            "printedName": "τ_0_0.InputRow.ID"
                           }
                         ],
                         "usr": "s:Sh"
@@ -5984,12 +6136,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6004,12 +6159,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0hJ0QZGGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC11connectionsSDy8InputRow_06OutputH2IDQZShyAE_0J0QZGGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -6034,11 +6192,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -6063,12 +6222,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6096,12 +6258,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6116,12 +6281,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16_allMustRunNodesShy2IDQzGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16_allMustRunNodesShy2IDQzGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -6159,11 +6327,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "RawDocComment"
             ],
@@ -6202,12 +6371,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6248,12 +6420,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6268,12 +6443,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV14memoizedQueuesSDyShy2IDQzGAFGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC14memoizedQueuesSDyShy2IDQzGAFGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -6298,11 +6476,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "RawDocComment"
             ],
@@ -6328,12 +6507,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6361,12 +6543,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6381,12 +6566,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV19nodesScheduledToRunShy2IDQzGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC19nodesScheduledToRunShy2IDQzGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -6411,11 +6599,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "RawDocComment"
             ],
@@ -6441,12 +6630,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6474,12 +6666,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6494,12 +6689,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV16nodesToAlwaysRunShy2IDQzGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC16nodesToAlwaysRunShy2IDQzGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -6524,11 +6722,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -6553,12 +6752,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6586,12 +6788,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvs",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvs",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvs",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvs",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6606,83 +6811,18 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvM",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV13keyboardNodesShy2IDQzGvM",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvM",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC13keyboardNodesShy2IDQzGvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "createCachedDownstreamNodes",
-            "printedName": "createCachedDownstreamNodes(connections:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[τ_0_0.OutputRow.RowID : Swift.Set<τ_0_0.ID>]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.OutputRow.RowID"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Set",
-                    "printedName": "Swift.Set<τ_0_0.ID>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.ID"
-                      }
-                    ],
-                    "usr": "s:Sh"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[τ_0_0.OutputRow.RowID : Swift.Set<τ_0_0.InputRow.RowID>]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.OutputRow.RowID"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Set",
-                    "printedName": "Swift.Set<τ_0_0.InputRow.RowID>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.InputRow.RowID"
-                      }
-                    ],
-                    "usr": "s:Sh"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV27createCachedDownstreamNodes11connectionsSDy8InputRow_06OutputL2IDQZShy0N0QzGGSDyAHShyAF_0lN0QZGG_tFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV27createCachedDownstreamNodes11connectionsSDy8InputRow_06OutputL2IDQZShy0N0QzGGSDyAHShyAF_0lN0QZGG_tFZ",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-            "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
-            "static": true,
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -6709,17 +6849,17 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV19getAllUpstreamNodes4fromShy2IDQzGAG_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV19getAllUpstreamNodes4fromShy2IDQzGAG_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC19getAllUpstreamNodes4fromShy2IDQzGAG_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC19getAllUpstreamNodes4fromShy2IDQzGAG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Mutating",
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "funcSelfKind": "Mutating"
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -6746,11 +6886,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV34findDirectlyConnectedUpstreamNodes4fromShy2IDQzGAG_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV34findDirectlyConnectedUpstreamNodes4fromShy2IDQzGAG_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC34findDirectlyConnectedUpstreamNodes4fromShy2IDQzGAG_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC34findDirectlyConnectedUpstreamNodes4fromShy2IDQzGAG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6779,11 +6922,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV24immediatelyUpstreamNodes3forShy2IDQzGAG_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV24immediatelyUpstreamNodes3forShy2IDQzGAG_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC24immediatelyUpstreamNodes3forShy2IDQzGAG_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC24immediatelyUpstreamNodes3forShy2IDQzGAG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6812,11 +6958,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV28getConnectedInputCoordinates2toSay0H3Row_0K2IDQZG0L0Qz_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV28getConnectedInputCoordinates2toSay0H3Row_0K2IDQZG0L0Qz_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC28getConnectedInputCoordinates2toSay0H3Row_2IDQZGAGQz_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC28getConnectedInputCoordinates2toSay0H3Row_2IDQZGAGQz_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6845,11 +6994,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV29getConnectedOutputCoordinates2toSay8InputRow_0hL2IDQZG0M0Qz_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV29getConnectedOutputCoordinates2toSay8InputRow_0hL2IDQZG0M0Qz_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC29getConnectedOutputCoordinates2toSay8InputRow_0hL2IDQZG0M0Qz_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC29getConnectedOutputCoordinates2toSay8InputRow_0hL2IDQZG0M0Qz_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6878,11 +7030,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV28getConnectedOutputCoordinate2to8InputRow_0hL2IDQZSgAF_0lM0QZ_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV28getConnectedOutputCoordinate2to8InputRow_0hL2IDQZSgAF_0lM0QZ_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC28getConnectedOutputCoordinate2to8InputRow_0hL2IDQZSgAF_0M0QZ_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC28getConnectedOutputCoordinate2to8InputRow_0hL2IDQZSgAF_0M0QZ_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -6904,12 +7059,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV21hasUpstreamConnection2toSb8InputRow_0K2IDQZ_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV21hasUpstreamConnection2toSb8InputRow_0K2IDQZ_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC21hasUpstreamConnection2toSb8InputRow_2IDQZ_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC21hasUpstreamConnection2toSb8InputRow_2IDQZ_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -6940,12 +7096,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV21getUpstreamConnection2to8InputRow_06OutputK2IDQZSgAF_0kM0QZ_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV21getUpstreamConnection2to8InputRow_06OutputK2IDQZSgAF_0kM0QZ_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC21getUpstreamConnection2to8InputRow_06OutputK2IDQZSgAF_0M0QZ_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC21getUpstreamConnection2to8InputRow_06OutputK2IDQZSgAF_0M0QZ_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7023,12 +7180,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV28createShallowDownstreamNodes03allI011connectionsSDy2IDQzShyAHGGSayxG_SDy8InputRow_06OutputnL0QZShyAL_0nL0QZGGtFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV28createShallowDownstreamNodes03allI011connectionsSDy2IDQzShyAHGGSayxG_SDy8InputRow_06OutputnL0QZShyAL_0nL0QZGGtFZ",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC28createShallowDownstreamNodes03allI011connectionsSDy2IDQzShyAHGGSayxG_SDy8InputRow_06OutputnL0QZShyAL_AGQZGGtFZ",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC28createShallowDownstreamNodes03allI011connectionsSDy2IDQzShyAHGGSayxG_SDy8InputRow_06OutputnL0QZShyAL_AGQZGGtFZ",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7083,12 +7243,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV27getShallowDownstreamNodeIds4from11connectionsShy2IDQzGAH_SDy8InputRow_06OutputoM0QZShyAJ_0oM0QZGGtFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV27getShallowDownstreamNodeIds4from11connectionsShy2IDQzGAH_SDy8InputRow_06OutputoM0QZShyAJ_0oM0QZGGtFZ",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC27getShallowDownstreamNodeIds4from11connectionsShy2IDQzGAH_SDy8InputRow_06OutputoM0QZShyAJ_AGQZGGtFZ",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC27getShallowDownstreamNodeIds4from11connectionsShy2IDQzGAH_SDy8InputRow_06OutputoM0QZShyAJ_AGQZGGtFZ",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7151,12 +7314,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV41createShallowDownstreamNodesAdjacencyList07shallowhI0SDy2IDQzSayAGGGSDyAGShyAGGG_tFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV41createShallowDownstreamNodesAdjacencyList07shallowhI0SDy2IDQzSayAGGGSDyAGShyAGGG_tFZ",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC41createShallowDownstreamNodesAdjacencyList07shallowhI0SDy2IDQzSayAGGGSDyAGShyAGGG_tFZ",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC41createShallowDownstreamNodesAdjacencyList07shallowhI0SDy2IDQzSayAGGGSDyAGShyAGGG_tFZ",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7214,13 +7380,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV13findAllCycles18downstreamNodesMapShyShy2IDQzGGSDyAgHG_tFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV13findAllCycles18downstreamNodesMapShyShy2IDQzGGSDyAgHG_tFZ",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC13findAllCycles18downstreamNodesMapShyShy2IDQzGGSDyAgHG_tFZ",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC13findAllCycles18downstreamNodesMapShyShy2IDQzGGSDyAgHG_tFZ",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7319,12 +7486,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV12detectCycles4from18downstreamNodesMap18visitedPathInOrder0lM3Set011fullVisitedP0AA0G15DetectionResultVy2IDQzGAM_SDyAMShyAMGGSayAMGA2OtF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV12detectCycles4from18downstreamNodesMap18visitedPathInOrder0lM3Set011fullVisitedP0AA0G15DetectionResultVy2IDQzGAM_SDyAMShyAMGGSayAMGA2OtF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC12detectCycles4from18downstreamNodesMap18visitedPathInOrder0lM3Set011fullVisitedP0AA0G15DetectionResultVy2IDQzGAM_SDyAMShyAMGGSayAMGA2OtF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC12detectCycles4from18downstreamNodesMap18visitedPathInOrder0lM3Set011fullVisitedP0AA0G15DetectionResultVy2IDQzGAM_SDyAMShyAMGGSayAMGA2OtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7400,13 +7568,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV11mergeCycles14knownCycleSets07withNewE0ShyShy2IDQzGGAJ_AJtFZ",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV11mergeCycles14knownCycleSets07withNewE0ShyShy2IDQzGGAJ_AJtFZ",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC11mergeCycles14knownCycleSets07withNewE0ShyShy2IDQzGGAJ_AJtFZ",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC11mergeCycles14knownCycleSets07withNewE0ShyShy2IDQzGGAJ_AJtFZ",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7430,11 +7599,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV13cycleContainsySb2IDQzF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV13cycleContainsySb2IDQzF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC13cycleContainsySb2IDQzF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC13cycleContainsySb2IDQzF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7463,12 +7635,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV25getAllConnectedCycleNodes2toShy2IDQzGAG_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV25getAllConnectedCycleNodes2toShy2IDQzGAG_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC25getAllConnectedCycleNodes2toShy2IDQzGAG_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC25getAllConnectedCycleNodes2toShy2IDQzGAG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7499,12 +7672,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV21getNonCycleEntryNodes2toShy2IDQzGAG_tF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV21getNonCycleEntryNodes2toShy2IDQzGAG_tF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC21getNonCycleEntryNodes2toShy2IDQzGAG_tF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC21getNonCycleEntryNodes2toShy2IDQzGAG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7556,16 +7730,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV22getNextNodeToCalculate3for12visitedNodes2IDQzSgShyAHG_AJtF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV22getNextNodeToCalculate3for12visitedNodes2IDQzSgShyAHG_AJtF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC22getNextNodeToCalculate3for12visitedNodes2IDQzSgShyAHG_AJtF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC22getNextNodeToCalculate3for12visitedNodes2IDQzSgShyAHG_AJtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Mutating"
+              "Final"
             ],
             "isFromExtension": true,
-            "funcSelfKind": "Mutating"
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -7587,10 +7761,11 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesToRunOnC4StepShy2IDQzGvp",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesToRunOnC4StepShy2IDQzGvp",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesToRunOnC4StepShy2IDQzGvp",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesToRunOnC4StepShy2IDQzGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
+              "Final",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7615,11 +7790,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12StitchEngine20GraphTopologicalDataV012nodesToRunOnC4StepShy2IDQzGvg",
-                "mangledName": "$s12StitchEngine20GraphTopologicalDataV012nodesToRunOnC4StepShy2IDQzGvg",
+                "usr": "s:12StitchEngine20GraphTopologicalDataC012nodesToRunOnC4StepShy2IDQzGvg",
+                "mangledName": "$s12StitchEngine20GraphTopologicalDataC012nodesToRunOnC4StepShy2IDQzGvg",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
                 "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+                "declAttributes": [
+                  "Final"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "get"
               }
@@ -7645,24 +7823,27 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine20GraphTopologicalDataV15getMustRunNodesShy2IDQzGyF",
-            "mangledName": "$s12StitchEngine20GraphTopologicalDataV15getMustRunNodesShy2IDQzGyF",
+            "usr": "s:12StitchEngine20GraphTopologicalDataC15getMustRunNodesShy2IDQzGyF",
+            "mangledName": "$s12StitchEngine20GraphTopologicalDataC15getMustRunNodesShy2IDQzGyF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Final"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:12StitchEngine20GraphTopologicalDataV",
-        "mangledName": "$s12StitchEngine20GraphTopologicalDataV",
+        "declKind": "Class",
+        "usr": "s:12StitchEngine20GraphTopologicalDataC",
+        "mangledName": "$s12StitchEngine20GraphTopologicalDataC",
         "moduleName": "StitchEngine",
         "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
         "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "Final",
+          "AccessControl"
         ],
         "conformances": [
           {
