@@ -1519,6 +1519,9 @@
             "mangledName": "$s12StitchEngine17GraphCalculatableP5nodesSDy4Node_2IDQZAEQzGvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1649,6 +1652,9 @@
             "mangledName": "$s12StitchEngine17GraphCalculatableP13portsToUpdateShyAA12NodePortTypeOy0H0QzGGvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1770,6 +1776,9 @@
             "mangledName": "$s12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1931,6 +1940,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1960,6 +1972,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2401,7 +2416,8 @@
             "mangledName": "$s12StitchEngine17GraphCalculatablePAAE11connectionsSDy4Node_8InputRow06OutputH2IDQZShyAE_AF0J0QZGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -2485,7 +2501,8 @@
             "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22shallowDownstreamNodesSDy4Node_2IDQZShyAGGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -2575,6 +2592,9 @@
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+            "declAttributes": [
+              "Custom"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2601,6 +2621,9 @@
             "usr": "s:12StitchEngine17GraphCalculatablePAAE012nodesForNextC4StepShy4Node_2IDQZGvp",
             "mangledName": "$s12StitchEngine17GraphCalculatablePAAE012nodesForNextC4StepShy4Node_2IDQZGvp",
             "moduleName": "StitchEngine",
+            "declAttributes": [
+              "Custom"
+            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -2711,7 +2734,8 @@
             "mangledName": "$s12StitchEngine17GraphCalculatablePAAE012nodesToRunOnC4StepShy4Node_2IDQZGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -2776,7 +2800,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2812,7 +2837,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -3259,95 +3285,6 @@
           },
           {
             "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.ID"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine16NodeCalculatableP2id2IDQzvp",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP2id2IDQzvp",
-            "moduleName": "StitchEngine",
-            "protocolReq": true,
-            "overriding": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.ID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatableP2id2IDQzvg",
-                "mangledName": "$s12StitchEngine16NodeCalculatableP2id2IDQzvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "protocolReq": true,
-                "overriding": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.ID"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatableP2id2IDQzvs",
-                "mangledName": "$s12StitchEngine16NodeCalculatableP2id2IDQzvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatableP2id2IDQzvM",
-                "mangledName": "$s12StitchEngine16NodeCalculatableP2id2IDQzvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "isGroupNode",
             "printedName": "isGroupNode",
             "children": [
@@ -3363,6 +3300,9 @@
             "mangledName": "$s12StitchEngine16NodeCalculatableP07isGroupC0Sbvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3405,6 +3345,9 @@
             "mangledName": "$s12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3522,6 +3465,9 @@
             "mangledName": "$s12StitchEngine16NodeCalculatableP25isComponentOutputSplitterSbvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4210,6 +4156,9 @@
             "mangledName": "$s12StitchEngine19NodeRowCalculatableP6valuesSay8PortDataQzGvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4315,6 +4264,9 @@
             "mangledName": "$s12StitchEngine19NodeRowCalculatableP26containsUpstreamConnectionSbvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4371,6 +4323,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4392,6 +4347,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -4469,6 +4427,9 @@
             "moduleName": "StitchEngine",
             "protocolReq": true,
             "overriding": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4601,6 +4562,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4628,6 +4592,9 @@
             "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP24upstreamOutputCoordinate0hE2IDQzSgvp",
             "moduleName": "StitchEngine",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4677,7 +4644,8 @@
             "mangledName": "$s12StitchEngine24InputNodeRowCalculatablePAAE26containsUpstreamConnectionSbvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -5445,7 +5413,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -5581,6 +5550,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -5738,6 +5708,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -5889,7 +5860,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6050,7 +6022,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6198,7 +6171,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6334,6 +6308,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -6483,6 +6458,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -6606,6 +6582,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -6728,7 +6705,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6856,6 +6834,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -6892,7 +6871,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -6928,7 +6908,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -6964,7 +6945,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7000,7 +6982,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7036,7 +7019,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7066,6 +7050,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7103,6 +7088,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7187,7 +7173,8 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7250,7 +7237,8 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7321,7 +7309,8 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "static": true,
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7388,6 +7377,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7493,6 +7483,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7576,6 +7567,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7605,7 +7597,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7642,6 +7635,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7679,6 +7673,7 @@
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7736,7 +7731,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7766,6 +7762,7 @@
             "moduleName": "StitchEngine",
             "declAttributes": [
               "Final",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -7829,7 +7826,8 @@
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Node where Node : StitchEngine.NodeCalculatable>",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Custom"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -7859,6 +7857,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -7956,7 +7961,8 @@
             "mangledName": "$sSa12StitchEngineAA19NodeRowCalculatableRzlE6valuesSaySay8PortDataQzGGvp",
             "moduleName": "StitchEngine",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Custom"
             ],
             "isFromExtension": true,
             "accessors": [
