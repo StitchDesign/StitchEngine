@@ -30,8 +30,8 @@ public protocol GraphCalculatable<Node> : AnyObject {
   var shouldResortPreviewLayers: Swift.Bool { get set }
   @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
   @_Concurrency.MainActor func updateOrderedPreviewLayers()
-  func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
-  func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
 }
 #else
@@ -44,8 +44,8 @@ public protocol GraphCalculatable : AnyObject {
   var shouldResortPreviewLayers: Swift.Bool { get set }
   @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
   @_Concurrency.MainActor func updateOrderedPreviewLayers()
-  func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
-  func getAnimationNodes() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
+  @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
 }
 #endif
