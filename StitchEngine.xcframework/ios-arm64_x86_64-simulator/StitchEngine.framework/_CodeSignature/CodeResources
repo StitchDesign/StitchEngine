@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/StitchEngine-Swift.h</key>
 		<data>
-		Qg1HaEamI4VZeFn4LTjhxTOHK64=
+		kwvq0K8y2txV6jgYemnKQIicLd8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R19xZGlFQEtXKyenwahLfLh3TNA=
+		zwCwNAzy/0Ne+0oIzRo5hKaJ+6s=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bpvGyPD5buuKr9QaupQ5h08o4Io=
+		Kuc9zRAhU2d0S7nyWRflHYur7Zc=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9PzDVMeuE8ggMOyOFKu+HJjf5Ms=
+		dyhvoGA8v6tOiNrs3BG/C6XL0T8=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bpvGyPD5buuKr9QaupQ5h08o4Io=
+		Kuc9zRAhU2d0S7nyWRflHYur7Zc=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zdPzKA/0sczScVDyri3Gsh1NUGw=
+		tJUp0Dpz99o8YrQY3JWle7Dyb7I=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fIfYrbQCafkDRbOfl0LpaMBl8pY=
+		fpXjF252j7gsWgpXz9xrXMCanVw=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OK2k6+MyIIOZuTWmxNXKja2Ij6s=
+		0ILekVct4D52CBk/84Sg7LRWqWs=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fIfYrbQCafkDRbOfl0LpaMBl8pY=
+		fpXjF252j7gsWgpXz9xrXMCanVw=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IWMYzpIuiddMG9vwaZ5Tvj8WIrg=
+		32UKin679iD53NEphpCx7Kn708E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c97r6cn+LoMLIwFSJ2kM1AE+GDAxyL8D8N5YgrkVdVg=
+			XavQDfEhKlDPRszgpeO51h+ElTzEEgMZs8pR5Jp3RBY=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -73,28 +73,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bTDQLZG5t/rw2MMkOyAB1ArIPvC9ojyIRnIflTrvin0=
+			yORkJGXAr5IeiQDScEImldy90XMQdpzRzbbBL32Fih4=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99LFPIbDy3Ju4j8oH3VTqph54qdEmIYTQd0Jgu0yLpU=
+			cgW+kEN+khn+qg0sNNqHMoF4x8v5LI2u4c56XNPOYHI=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bTDQLZG5t/rw2MMkOyAB1ArIPvC9ojyIRnIflTrvin0=
+			yORkJGXAr5IeiQDScEImldy90XMQdpzRzbbBL32Fih4=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mTzV4PIZ1Sset1SutdpE4h91mZhudxnsFNAZ+/K+7zw=
+			zTclBjKUZ1+7w8Uvb/3S0oTz/AHhn9gc1D+iFeRzk3s=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -108,28 +108,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPKxJwzsx/o0hfFBkMw9he1tUCOhmSi1QG85/a3ScSU=
+			J/L0oCrCbHjLa/XgDxk4ne1YnvDJRHGllHg5osfgJdM=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bLiTodK+kHzpe/O0fFWi7EFQZIgcx9rlxP2hFtB6xc=
+			h6Gfah5lnkuaWrjbrbDCgtnQGOMFQztPNeRlfg+szrc=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPKxJwzsx/o0hfFBkMw9he1tUCOhmSi1QG85/a3ScSU=
+			J/L0oCrCbHjLa/XgDxk4ne1YnvDJRHGllHg5osfgJdM=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q9l3+Bfu01HFXMFtt5MBcWRsWjEYC01lhTCyXiXIJDM=
+			aGk8Ztip06zZAu9pj11OcJdCBJQ/QHh3AcEdLK4TgNc=
 			</data>
 		</dict>
 	</dict>
