@@ -114,7 +114,7 @@ public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable where Self.I
   associatedtype PortData : Swift.Equatable
   @_Concurrency.MainActor var values: [Self.PortData] { get set }
   @_Concurrency.MainActor var containsUpstreamConnection: Swift.Bool { get }
-  @_Concurrency.MainActor func updateValues(_ values: [Self.PortData])
+  @_Concurrency.MainActor func updateOutputValues(_ values: [Self.PortData])
   @_Concurrency.MainActor func updatePortViewModels()
 }
 public protocol InputNodeRowCalculatable : StitchEngine.NodeRowCalculatable {
