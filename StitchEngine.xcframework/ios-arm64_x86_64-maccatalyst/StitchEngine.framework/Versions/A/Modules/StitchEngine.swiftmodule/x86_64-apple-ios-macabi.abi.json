@@ -3330,51 +3330,6 @@
           },
           {
             "kind": "Var",
-            "name": "requiresOutputValuesChange",
-            "printedName": "requiresOutputValuesChange",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvp",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvp",
-            "moduleName": "StitchEngine",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvg",
-                "mangledName": "$s12StitchEngine16NodeCalculatableP26requiresOutputValuesChangeSbvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "inputsValuesList",
             "printedName": "inputsValuesList",
             "children": [

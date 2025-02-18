@@ -77,7 +77,6 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   @_Concurrency.MainActor var isGroupNode: Swift.Bool { get }
-  @_Concurrency.MainActor var requiresOutputValuesChange: Swift.Bool { get }
   @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
   @_Concurrency.MainActor var isComponentOutputSplitter: Swift.Bool { get }
 }
@@ -95,7 +94,6 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
   @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
   @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
   @_Concurrency.MainActor var isGroupNode: Swift.Bool { get }
-  @_Concurrency.MainActor var requiresOutputValuesChange: Swift.Bool { get }
   @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
   @_Concurrency.MainActor var isComponentOutputSplitter: Swift.Bool { get }
 }
