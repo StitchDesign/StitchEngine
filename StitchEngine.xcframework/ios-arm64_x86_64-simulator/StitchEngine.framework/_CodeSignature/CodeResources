@@ -10,47 +10,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4dDywx63ZYeP5VmGbpp9dxaWuH4=
+		6No4wIXNkWGCZ2VeWkrqqd+qvFA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NCrHyf+mUhiPPchuX89kVkfDR/I=
+		S4aOM4Cv5N31aN8502tnXMXVrXA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VAhnrS7MRk1blpSm69o7ZdjFDIY=
+		j4m2868Z7CkvD2HuS6SLT6UHxAI=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dyhvoGA8v6tOiNrs3BG/C6XL0T8=
+		cV1ajeMaDBBS1Awh6tCDbSu3Myc=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VAhnrS7MRk1blpSm69o7ZdjFDIY=
+		j4m2868Z7CkvD2HuS6SLT6UHxAI=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Zfgm17RPvDhztEOPq59gdnfDw6M=
+		g0VCf0CSu3lWqQtNPgEDmKfGVQA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NCrHyf+mUhiPPchuX89kVkfDR/I=
+		S4aOM4Cv5N31aN8502tnXMXVrXA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		P0BLK1AzDnfhZx0Q9kkJ+NHA+X8=
+		J/1PQuNig/P9tZaqYhSz9z3ZvDA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0ILekVct4D52CBk/84Sg7LRWqWs=
+		7cgsp/EjHQJKkG651L45RS2d7aI=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		P0BLK1AzDnfhZx0Q9kkJ+NHA+X8=
+		J/1PQuNig/P9tZaqYhSz9z3ZvDA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FQ8j7Zim6p4WhtMXzCPML22R/ho=
+		MWY1HaNVgd378FjhftOKL7oj2o4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,70 +66,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBMy/NU/rkhjyIR+I0VSK30FsaQUEX/jgsyhcUy6nXg=
+			WJqXl+cafiqo8HbDLRmAu6GAsHGQE1BrP76KFQhgcks=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jx5v5lUmQz47zoq9OSNhCGkXnwVb4U73Bbm7a9SMLLI=
+			OmDwjCx+erXfxecUA2q16ivRs8RNmArtRAeFbCZftg4=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cgW+kEN+khn+qg0sNNqHMoF4x8v5LI2u4c56XNPOYHI=
+			uH5/0Aour+o4caC3TXj7JYJi5Ukms3Sg70h2RekLM/Q=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jx5v5lUmQz47zoq9OSNhCGkXnwVb4U73Bbm7a9SMLLI=
+			OmDwjCx+erXfxecUA2q16ivRs8RNmArtRAeFbCZftg4=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vtkn2sLRG6arfm8tEkMCJtshxS3jx7UOvaT3SZ9AHFg=
+			Hqx5nx1zcrr/ppM/+k8RjAEoqG3LIZTiUYKl7Ty4WIY=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBMy/NU/rkhjyIR+I0VSK30FsaQUEX/jgsyhcUy6nXg=
+			WJqXl+cafiqo8HbDLRmAu6GAsHGQE1BrP76KFQhgcks=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCeKQNG/BScNsUAS96oKHK3jFLyhinA+Uyy2ruavRMg=
+			mzf3moZlxTXG+er0yemBzEn2VMDRHniKUc/QGX1Z0/w=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h6Gfah5lnkuaWrjbrbDCgtnQGOMFQztPNeRlfg+szrc=
+			mu+W0eUVTCH76obxxwqXdPpfUZXDwzWwQuupGE0qyKw=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCeKQNG/BScNsUAS96oKHK3jFLyhinA+Uyy2ruavRMg=
+			mzf3moZlxTXG+er0yemBzEn2VMDRHniKUc/QGX1Z0/w=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yk+Onl4YiArj64nbGDVNEAMs+bqrElmSuRXjCbi0uGQ=
+			hehrFVOlhG4dZjB2hinuGXqOdseA889PFMrclw8iI/E=
 			</data>
 		</dict>
 	</dict>

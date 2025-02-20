@@ -2222,7 +2222,7 @@
           {
             "kind": "Function",
             "name": "updateDownstreamInputs",
-            "printedName": "updateDownstreamInputs(sourceNode:flowValues:outputCoordinate:)",
+            "printedName": "updateDownstreamInputs(sourceNode:flowValues:upstreamOutputChanged:outputCoordinate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2257,13 +2257,19 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "DependentMember",
                 "printedName": "τ_0_0.Node.OutputRow.RowID"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_8InputRow2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_AI06OutputoP0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues16outputCoordinateShy0I0_8InputRow2IDQZGAHQz_SayAH_10EvalResult8PortDataQZGAH_AI06OutputoP0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAIQz_SayAI_10EvalResult8PortDataQZGSbAI_AJ0mrS0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAIQz_SayAI_10EvalResult8PortDataQZGSbAI_AJ0mrS0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -4359,6 +4365,51 @@
             "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP06OutputE2IDQa",
             "moduleName": "StitchEngine",
             "protocolReq": true
+          },
+          {
+            "kind": "Var",
+            "name": "isPulseNodeType",
+            "printedName": "isPulseNodeType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine24InputNodeRowCalculatableP07isPulseD4TypeSbvp",
+            "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP07isPulseD4TypeSbvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24InputNodeRowCalculatableP07isPulseD4TypeSbvg",
+                "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP07isPulseD4TypeSbvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
