@@ -15,7 +15,7 @@ extension StitchEngine.GraphCalculatable {
 }
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func getChangedDownstreamInputIds(evalResult: Self.Node.EvalResult, sourceNode: Self.Node, existingOutputsValues: [[Self.Node.PortData]], outputCoordinates: [Self.Node.OutputRow.RowID]) -> Swift.Set<Self.Node.InputRow.ID>
-  @_Concurrency.MainActor public func updateDownstreamInputs(sourceNode: Self.Node, flowValues: [Self.Node.PortData], outputCoordinate: Self.Node.OutputRow.RowID) -> Swift.Set<Self.Node.InputRow.ID>
+  @_Concurrency.MainActor public func updateDownstreamInputs(sourceNode: Self.Node, flowValues: [Self.Node.PortData], upstreamOutputChanged: Swift.Bool, outputCoordinate: Self.Node.OutputRow.RowID) -> Swift.Set<Self.Node.InputRow.ID>
 }
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func updateTopologicalData()
@@ -117,6 +117,7 @@ public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable where Self.I
 }
 public protocol InputNodeRowCalculatable : StitchEngine.NodeRowCalculatable {
   associatedtype OutputRowID : StitchEngine.NodeRowId
+  @_Concurrency.MainActor var isPulseNodeType: Swift.Bool { get }
   @_Concurrency.MainActor var values: [Self.PortData] { get set }
   @_Concurrency.MainActor func didInputsUpdate(newValues: [Self.PortData], oldValues: [Self.PortData])
   @_Concurrency.MainActor var upstreamOutputCoordinate: Self.OutputRowID? { get }
