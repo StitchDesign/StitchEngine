@@ -5,9 +5,9 @@ relocations:
   - { offset: 0x32B05, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculate4fromyShy4Node_2IDQZG_tF', symObjAddr: 0x0, symBinAddr: 0x2764, symSize: 0xA68 }
   - { offset: 0x32C1F, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculate4fromyShy4Node_2IDQZG_tFAhF_8InputRowAGQZXEfU_', symObjAddr: 0xA68, symBinAddr: 0x31CC, symSize: 0x13C }
   - { offset: 0x32C5B, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculate4fromyShy4Node_2IDQZG_tFAhF_8InputRowAGQZXEfU_TA', symObjAddr: 0xE74, symBinAddr: 0x35D8, symSize: 0x1C }
-  - { offset: 0x32C6E, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculateyy4Node_2IDQZF', symObjAddr: 0xE90, symBinAddr: 0x35F4, symSize: 0x180 }
-  - { offset: 0x32CB7, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculateyyShy4Node_2IDQZGF', symObjAddr: 0x1010, symBinAddr: 0x3774, symSize: 0x19C }
-  - { offset: 0x32D00, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE9calculateyySay4Node_2IDQZGF', symObjAddr: 0x11AC, symBinAddr: 0x3910, symSize: 0x138 }
+  - { offset: 0x32C6E, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4Stepyy4Node_2IDQZF', symObjAddr: 0xE90, symBinAddr: 0x35F4, symSize: 0x180 }
+  - { offset: 0x32CB7, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyyShy4Node_2IDQZGF', symObjAddr: 0x1010, symBinAddr: 0x3774, symSize: 0x19C }
+  - { offset: 0x32D00, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyySay4Node_2IDQZGF', symObjAddr: 0x11AC, symBinAddr: 0x3910, symSize: 0x138 }
   - { offset: 0x32D4A, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine20GraphTopologicalDataC12detectCycles4from18downstreamNodesMap18visitedPathInOrder0lM3Set011fullVisitedP0AA0G15DetectionResultVy2IDQzGAM_SDyAMShyAMGGSayAMGA2OtFfA1_', symObjAddr: 0x12E4, symBinAddr: 0x3A48, symSize: 0x30 }
   - { offset: 0x32D72, size: 0x8, addend: 0x0, symName: '_$s12StitchEngine17fatalErrorIfDebugyySSFfA_', symObjAddr: 0x1390, symBinAddr: 0x3AF0, symSize: 0xC }
   - { offset: 0x32DA7, size: 0x8, addend: 0x0, symName: '_$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF', symObjAddr: 0xBA4, symBinAddr: 0x3308, symSize: 0x2D0 }

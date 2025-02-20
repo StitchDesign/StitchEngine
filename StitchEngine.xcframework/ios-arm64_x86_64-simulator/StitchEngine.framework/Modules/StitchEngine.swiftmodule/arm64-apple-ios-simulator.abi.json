@@ -2041,8 +2041,8 @@
           },
           {
             "kind": "Function",
-            "name": "calculate",
-            "printedName": "calculate(_:)",
+            "name": "scheduleForNextGraphStep",
+            "printedName": "scheduleForNextGraphStep(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2056,8 +2056,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE9calculateyy4Node_2IDQZF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE9calculateyy4Node_2IDQZF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4Stepyy4Node_2IDQZF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4Stepyy4Node_2IDQZF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2070,8 +2070,8 @@
           },
           {
             "kind": "Function",
-            "name": "calculate",
-            "printedName": "calculate(_:)",
+            "name": "scheduleForNextGraphStep",
+            "printedName": "scheduleForNextGraphStep(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2093,8 +2093,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE9calculateyyShy4Node_2IDQZGF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE9calculateyyShy4Node_2IDQZGF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyyShy4Node_2IDQZGF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyyShy4Node_2IDQZGF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2107,8 +2107,8 @@
           },
           {
             "kind": "Function",
-            "name": "calculate",
-            "printedName": "calculate(_:)",
+            "name": "scheduleForNextGraphStep",
+            "printedName": "scheduleForNextGraphStep(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2130,8 +2130,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE9calculateyySay4Node_2IDQZGF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE9calculateyySay4Node_2IDQZGF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyySay4Node_2IDQZGF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE015scheduleForNextC4StepyySay4Node_2IDQZGF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
