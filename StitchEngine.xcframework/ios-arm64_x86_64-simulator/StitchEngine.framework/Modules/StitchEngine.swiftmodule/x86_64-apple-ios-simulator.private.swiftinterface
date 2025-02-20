@@ -9,9 +9,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func calculate(from nodeIds: Swift.Set<Self.Node.ID>)
-  @_Concurrency.MainActor public func calculate(_ id: Self.Node.ID)
-  @_Concurrency.MainActor public func calculate(_ idSet: Swift.Set<Self.Node.ID>)
-  @_Concurrency.MainActor public func calculate(_ idList: [Self.Node.ID])
+  @_Concurrency.MainActor public func scheduleForNextGraphStep(_ id: Self.Node.ID)
+  @_Concurrency.MainActor public func scheduleForNextGraphStep(_ idSet: Swift.Set<Self.Node.ID>)
+  @_Concurrency.MainActor public func scheduleForNextGraphStep(_ idList: [Self.Node.ID])
 }
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func getChangedDownstreamInputIds(evalResult: Self.Node.EvalResult, sourceNode: Self.Node, existingOutputsValues: [[Self.Node.PortData]], outputCoordinates: [Self.Node.OutputRow.RowID]) -> Swift.Set<Self.Node.InputRow.ID>
