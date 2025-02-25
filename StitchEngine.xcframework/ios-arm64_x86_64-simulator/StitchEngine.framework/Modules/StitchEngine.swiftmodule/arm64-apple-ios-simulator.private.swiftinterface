@@ -99,7 +99,7 @@ public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
 }
 #endif
 extension StitchEngine.NodeCalculatable {
-  @_Concurrency.MainActor public func updatePortViewModels()
+  @_Concurrency.MainActor public func updatePortViewModels(_ graph: any StitchEngine.GraphCalculatable)
 }
 public protocol NodeEvalResult {
   associatedtype PortData : Swift.Equatable
@@ -113,7 +113,7 @@ public protocol NodeRowCalculatable : AnyObject, Swift.Identifiable where Self.I
   @_Concurrency.MainActor var values: [Self.PortData] { get set }
   @_Concurrency.MainActor var containsUpstreamConnection: Swift.Bool { get }
   @_Concurrency.MainActor func updateOutputValues(_ values: [Self.PortData])
-  @_Concurrency.MainActor func updatePortViewModels()
+  @_Concurrency.MainActor func updatePortViewModels(_ graph: any StitchEngine.GraphCalculatable)
 }
 public protocol InputNodeRowCalculatable : StitchEngine.NodeRowCalculatable {
   associatedtype OutputRowID : StitchEngine.NodeRowId
