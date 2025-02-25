@@ -3633,17 +3633,23 @@
           {
             "kind": "Function",
             "name": "updatePortViewModels",
-            "printedName": "updatePortViewModels()",
+            "printedName": "updatePortViewModels(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GraphCalculatable",
+                "printedName": "any StitchEngine.GraphCalculatable",
+                "usr": "s:12StitchEngine17GraphCalculatableP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyF",
-            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyF",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyAA05GraphD0_pF",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE20updatePortViewModelsyyAA05GraphD0_pF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
@@ -4296,17 +4302,23 @@
           {
             "kind": "Function",
             "name": "updatePortViewModels",
-            "printedName": "updatePortViewModels()",
+            "printedName": "updatePortViewModels(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GraphCalculatable",
+                "printedName": "any StitchEngine.GraphCalculatable",
+                "usr": "s:12StitchEngine17GraphCalculatableP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyF",
-            "mangledName": "$s12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyF",
+            "usr": "s:12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyAA05GraphE0_pF",
+            "mangledName": "$s12StitchEngine19NodeRowCalculatableP20updatePortViewModelsyyAA05GraphE0_pF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeRowCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeRowCalculatable>",
