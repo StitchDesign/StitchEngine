@@ -2004,6 +2004,51 @@
           },
           {
             "kind": "Function",
+            "name": "didPortsUpdate",
+            "printedName": "didPortsUpdate(ports:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NodePortType",
+                    "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node"
+                      }
+                    ],
+                    "usr": "s:12StitchEngine12NodePortTypeO"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine17GraphCalculatableP14didPortsUpdate5portsyShyAA12NodePortTypeOy0I0QzGG_tF",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP14didPortsUpdate5portsyShyAA12NodePortTypeOy0I0QzGG_tF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "calculate",
             "printedName": "calculate(from:)",
             "children": [
@@ -8852,7 +8897,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/christianjclampitt\/Local Documents\/wissenschaft\/StitchEngine-ACTUAL-CODE\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
+      "filePath": "\/Users\/ellbosch\/Repos\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 2,
