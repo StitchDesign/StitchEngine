@@ -33,6 +33,7 @@ public protocol GraphCalculatable<Node> : AnyObject {
   @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
+  @_Concurrency.MainActor func didPortsUpdate(ports: Swift.Set<StitchEngine.NodePortType<Self.Node>>)
 }
 #else
 public protocol GraphCalculatable : AnyObject {
@@ -47,6 +48,7 @@ public protocol GraphCalculatable : AnyObject {
   @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
+  @_Concurrency.MainActor func didPortsUpdate(ports: Swift.Set<StitchEngine.NodePortType<Self.Node>>)
 }
 #endif
 extension StitchEngine.GraphCalculatable {
