@@ -2267,7 +2267,7 @@
           {
             "kind": "Function",
             "name": "updateDownstreamInputs",
-            "printedName": "updateDownstreamInputs(sourceNode:flowValues:upstreamOutputChanged:outputCoordinate:)",
+            "printedName": "updateDownstreamInputs(sourceNode:flowValues:mediaList:upstreamOutputChanged:outputCoordinate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2302,6 +2302,35 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[τ_0_0.Node.EvalResult.MediaType?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.Node.EvalResult.MediaType?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
@@ -2313,8 +2342,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAIQz_SayAI_10EvalResult8PortDataQZGSbAI_AJ0mrS0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAIQz_SayAI_10EvalResult8PortDataQZGSbAI_AJ0mrS0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues9mediaList21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0otU0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues9mediaList21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0otU0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2991,6 +3020,16 @@
             "protocolReq": true
           },
           {
+            "kind": "AssociatedType",
+            "name": "NodeMediaEphemeralObservable",
+            "printedName": "NodeMediaEphemeralObservable",
+            "declKind": "AssociatedType",
+            "usr": "s:12StitchEngine16NodeCalculatableP0C24MediaEphemeralObservableQa",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP0C24MediaEphemeralObservableQa",
+            "moduleName": "StitchEngine",
+            "protocolReq": true
+          },
+          {
             "kind": "Function",
             "name": "inputsWillUpdate",
             "printedName": "inputsWillUpdate(values:)",
@@ -3500,6 +3539,90 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "getMediaObservers",
+            "printedName": "getMediaObservers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[τ_0_0.NodeMediaEphemeralObservable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.NodeMediaEphemeralObservable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.NodeMediaEphemeralObservable"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatableP17getMediaObserversSay0cF19EphemeralObservableQzGSgyF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP17getMediaObserversSay0cF19EphemeralObservableQzGSgyF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateMediaAfterEval",
+            "printedName": "updateMediaAfterEval(mediaList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.EvalResult.MediaType?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "outputsValuesList",
             "printedName": "outputsValuesList",
@@ -3710,8 +3833,8 @@
         "usr": "s:12StitchEngine16NodeCalculatableP",
         "mangledName": "$s12StitchEngine16NodeCalculatableP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.ID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.EvalResult.PortData == τ_0_0.InputRow.PortData, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.ID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.ID.NodeId == τ_0_0.InputRow.OutputRowID.NodeId>",
-        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.ID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.EvalResult.PortData == Self.InputRow.PortData, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId>",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Identifiable, τ_0_0 == τ_0_0.NodeMediaEphemeralObservable.Node, τ_0_0.EvalResult : StitchEngine.NodeEvalResult, τ_0_0.ID == τ_0_0.InputRow.ID.NodeId, τ_0_0.InputRow : StitchEngine.InputNodeRowCalculatable, τ_0_0.NodeMediaEphemeralObservable : StitchEngine.MediaEphemeralObservable, τ_0_0.OutputRow : StitchEngine.NodeRowCalculatable, τ_0_0.EvalResult.PortData == τ_0_0.InputRow.PortData, τ_0_0.InputRow.OutputRowID == τ_0_0.OutputRow.ID, τ_0_0.InputRow.PortData == τ_0_0.OutputRow.PortData, τ_0_0.InputRow.ID.NodeId == τ_0_0.InputRow.OutputRowID.NodeId>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Identifiable, Self == Self.NodeMediaEphemeralObservable.Node, Self.EvalResult : StitchEngine.NodeEvalResult, Self.ID == Self.InputRow.ID.NodeId, Self.InputRow : StitchEngine.InputNodeRowCalculatable, Self.NodeMediaEphemeralObservable : StitchEngine.MediaEphemeralObservable, Self.OutputRow : StitchEngine.NodeRowCalculatable, Self.EvalResult.PortData == Self.InputRow.PortData, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -3740,6 +3863,278 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "MediaEphemeralObservable",
+        "printedName": "MediaEphemeralObservable",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Node",
+            "printedName": "Node",
+            "declKind": "AssociatedType",
+            "usr": "s:12StitchEngine24MediaEphemeralObservableP4NodeQa",
+            "mangledName": "$s12StitchEngine24MediaEphemeralObservableP4NodeQa",
+            "moduleName": "StitchEngine",
+            "protocolReq": true
+          },
+          {
+            "kind": "Var",
+            "name": "inputMedia",
+            "printedName": "inputMedia",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvp",
+            "mangledName": "$s12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvg",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvs",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvM",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP05inputC04Node_10EvalResult0C4TypeQZSgvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "computedMedia",
+            "printedName": "computedMedia",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvp",
+            "mangledName": "$s12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvg",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.Node.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvs",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvM",
+                "mangledName": "$s12StitchEngine24MediaEphemeralObservableP08computedC04Node_10EvalResult0C4TypeQZSgvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.MediaEphemeralObservable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.MediaEphemeralObservable>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12StitchEngine24MediaEphemeralObservableP",
+        "mangledName": "$s12StitchEngine24MediaEphemeralObservableP",
+        "moduleName": "StitchEngine",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0.Node : StitchEngine.NodeCalculatable>",
+        "sugared_genericSig": "<Self : AnyObject, Self.Node : StitchEngine.NodeCalculatable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3761,6 +4156,16 @@
             "declKind": "AssociatedType",
             "usr": "s:12StitchEngine14NodeEvalResultP8PortDataQa",
             "mangledName": "$s12StitchEngine14NodeEvalResultP8PortDataQa",
+            "moduleName": "StitchEngine",
+            "protocolReq": true
+          },
+          {
+            "kind": "AssociatedType",
+            "name": "MediaType",
+            "printedName": "MediaType",
+            "declKind": "AssociatedType",
+            "usr": "s:12StitchEngine14NodeEvalResultP9MediaTypeQa",
+            "mangledName": "$s12StitchEngine14NodeEvalResultP9MediaTypeQa",
             "moduleName": "StitchEngine",
             "protocolReq": true
           },
@@ -3890,6 +4295,166 @@
                 "declKind": "Accessor",
                 "usr": "s:12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvM",
                 "mangledName": "$s12StitchEngine14NodeEvalResultP13outputsValuesSaySay8PortDataQzGGvM",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mediaList",
+            "printedName": "mediaList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[τ_0_0.MediaType?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.MediaType?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "τ_0_0.MediaType?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.MediaType"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvp",
+            "mangledName": "$s12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[τ_0_0.MediaType?]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0.MediaType?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "τ_0_0.MediaType?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DependentMember",
+                                "printedName": "τ_0_0.MediaType"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvg",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[τ_0_0.MediaType?]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0.MediaType?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "τ_0_0.MediaType?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DependentMember",
+                                "printedName": "τ_0_0.MediaType"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvs",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvs",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvM",
+                "mangledName": "$s12StitchEngine14NodeEvalResultP9mediaListSay9MediaTypeQzSgGSgvM",
                 "moduleName": "StitchEngine",
                 "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeEvalResult>",
                 "sugared_genericSig": "<Self where Self : StitchEngine.NodeEvalResult>",
@@ -4087,8 +4652,8 @@
         "usr": "s:12StitchEngine14NodeEvalResultP",
         "mangledName": "$s12StitchEngine14NodeEvalResultP",
         "moduleName": "StitchEngine",
-        "genericSig": "<τ_0_0.PortData : Swift.Equatable>",
-        "sugared_genericSig": "<Self.PortData : Swift.Equatable>",
+        "genericSig": "<τ_0_0.MediaType : Swift.Equatable, τ_0_0.PortData : Swift.Equatable>",
+        "sugared_genericSig": "<Self.MediaType : Swift.Equatable, Self.PortData : Swift.Equatable>",
         "declAttributes": [
           "AccessControl"
         ],
