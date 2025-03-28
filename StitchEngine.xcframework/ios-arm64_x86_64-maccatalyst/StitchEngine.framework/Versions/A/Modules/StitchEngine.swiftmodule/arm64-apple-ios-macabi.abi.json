@@ -2048,6 +2048,51 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "currentGraphTime",
+            "printedName": "currentGraphTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine17GraphCalculatableP07currentC4TimeSdvp",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP07currentC4TimeSdvp",
+            "moduleName": "StitchEngine",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine17GraphCalculatableP07currentC4TimeSdvg",
+                "mangledName": "$s12StitchEngine17GraphCalculatableP07currentC4TimeSdvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "calculate",
             "printedName": "calculate(from:)",
@@ -2267,7 +2312,7 @@
           {
             "kind": "Function",
             "name": "updateDownstreamInputs",
-            "printedName": "updateDownstreamInputs(sourceNode:flowValues:mediaList:upstreamOutputChanged:outputCoordinate:)",
+            "printedName": "updateDownstreamInputs(sourceNode:upstreamOutputValues:mediaList:upstreamOutputChanged:outputCoordinate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2342,8 +2387,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues9mediaList21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0otU0QZtF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode10flowValues9mediaList21upstreamOutputChanged16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0otU0QZtF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode20upstreamOutputValues9mediaList0jK7Changed16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0ksT0QZtF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE22updateDownstreamInputs10sourceNode20upstreamOutputValues9mediaList0jK7Changed16outputCoordinateShy0I0_8InputRow2IDQZGAJQz_SayAJ_10EvalResult8PortDataQZGSayAJ_AP9MediaTypeQZSgGSgSbAJ_AK0ksT0QZtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -5148,6 +5193,62 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "coerce",
+            "printedName": "coerce(theseValues:toThisType:currentGraphTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.PortData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.PortData"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.PortData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.PortData"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.PortData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine24InputNodeRowCalculatableP6coerce11theseValues10toThisType16currentGraphTimeSay8PortDataQzGAJ_AISdtF",
+            "mangledName": "$s12StitchEngine24InputNodeRowCalculatableP6coerce11theseValues10toThisType16currentGraphTimeSay8PortDataQzGAJ_AISdtF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.InputNodeRowCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.InputNodeRowCalculatable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -9462,7 +9563,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ellbosch\/Repos\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
+      "filePath": "\/Users\/christianjclampitt\/Local Documents\/wissenschaft\/StitchEngine-ACTUAL-CODE\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 2,
