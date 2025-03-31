@@ -3872,6 +3872,56 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateOutputs",
+            "printedName": "updateOutputs(_:nodeDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[τ_0_0.InputRow.PortData]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.InputRow.PortData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.InputRow.PortData"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatablePAAE13updateOutputs_12nodeDelegateySaySay10EvalResult_8PortDataQZGG_xtF",
+            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE13updateOutputs_12nodeDelegateySaySay10EvalResult_8PortDataQZGG_xtF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -8735,57 +8785,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "updateOutputs",
-            "printedName": "updateOutputs(_:nodeDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[τ_0_0.PortData]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[τ_0_0.PortData]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.PortData"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_1_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:Sa12StitchEngineAA19NodeRowCalculatableRzlE13updateOutputs_12nodeDelegateySaySay8PortDataQzGG_qd__tAA0cE0Rd__10EvalResult_AEQYd__AFRSlF",
-            "mangledName": "$sSa12StitchEngineAA19NodeRowCalculatableRzlE13updateOutputs_12nodeDelegateySaySay8PortDataQzGG_qd__tAA0cE0Rd__10EvalResult_AEQYd__AFRSlF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : StitchEngine.NodeRowCalculatable, τ_1_0 : StitchEngine.NodeCalculatable, τ_0_0.PortData == τ_1_0.EvalResult.PortData>",
-            "sugared_genericSig": "<Element, Node where Element : StitchEngine.NodeRowCalculatable, Node : StitchEngine.NodeCalculatable, Element.PortData == Node.EvalResult.PortData>",
-            "declAttributes": [
-              "Mutating",
-              "Custom",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "Mutating"
           }
         ],
         "declKind": "Struct",
@@ -9563,7 +9562,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/christianjclampitt\/Local Documents\/wissenschaft\/StitchEngine-ACTUAL-CODE\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
+      "filePath": "\/Users\/ellbosch\/Repos\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 2,

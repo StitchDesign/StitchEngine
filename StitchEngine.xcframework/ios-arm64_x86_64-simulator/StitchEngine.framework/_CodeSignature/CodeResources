@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BhRAVChKJaIm8L5mix6T6JGR5D8=
+		zwCwNAzy/0Ne+0oIzRo5hKaJ+6s=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OTId81ZU1rcYUkS8qKlxCkAk8Vg=
+		qhlnKIQqHEahoHMSes8fCrjiHLw=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wH/5s0vXxXL6sG6X8Os8JslpJtE=
+		57BoJSF8ojjN9T8UeN6rEyBTeQA=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OTId81ZU1rcYUkS8qKlxCkAk8Vg=
+		qhlnKIQqHEahoHMSes8fCrjiHLw=
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xRx+5IGRoJO6f6vPTOYMs+LUsfw=
+		kuMn/vpmoy3XfBiiCyNux8rSweM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kL1vZjpwS0SgJ4ApevqsQJG3V7FX1zWSHmcWqZbla3U=
+			kUlMghYURAO8cXc2CaF2BwKIooGBKgAuusKVOZSc5dY=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v2hoL0luJcP27jZvkFoqUVyGbchts6M/lnVyduUISAo=
+			l7LAAIHzS3IntSw4As8pIZhlKnpJhVdFj4T/QnXCJjM=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kL1vZjpwS0SgJ4ApevqsQJG3V7FX1zWSHmcWqZbla3U=
+			kUlMghYURAO8cXc2CaF2BwKIooGBKgAuusKVOZSc5dY=
 			</data>
 		</dict>
 		<key>Modules/StitchEngine.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/GYTAew/KPIh0fXaVA+b6/L3cat9jUfnc+oN1EEbJiE=
+			esl8XxD0Je7vCPefCKmeXOPG2a6m11CwMDs/m/5dBdk=
 			</data>
 		</dict>
 	</dict>
