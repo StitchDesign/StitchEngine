@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StitchEngine
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StitchEngine
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
 import Swift
 import _Concurrency
@@ -20,7 +20,6 @@ extension StitchEngine.GraphCalculatable {
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func updateTopologicalData()
 }
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol GraphCalculatable<Node> : AnyObject {
   associatedtype Node : StitchEngine.NodeCalculatable
   typealias TopologicalData = StitchEngine.GraphTopologicalData<Self.Node>
@@ -36,23 +35,6 @@ public protocol GraphCalculatable<Node> : AnyObject {
   @_Concurrency.MainActor func didPortsUpdate(ports: Swift.Set<StitchEngine.NodePortType<Self.Node>>)
   @_Concurrency.MainActor var currentGraphTime: Foundation.TimeInterval { get }
 }
-#else
-public protocol GraphCalculatable : AnyObject {
-  associatedtype Node : StitchEngine.NodeCalculatable
-  typealias TopologicalData = StitchEngine.GraphTopologicalData<Self.Node>
-  var topologicalData: Self.TopologicalData { get }
-  @_Concurrency.MainActor var nodes: [Self.Node.ID : Self.Node] { get set }
-  @_Concurrency.MainActor var portsToUpdate: Swift.Set<StitchEngine.NodePortType<Self.Node>> { get set }
-  @_Concurrency.MainActor var shouldResortPreviewLayers: Swift.Bool { get set }
-  @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  @_Concurrency.MainActor func updateOrderedPreviewLayers()
-  @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
-  @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
-  @_Concurrency.MainActor func evaluateComponentOutputs()
-  @_Concurrency.MainActor func didPortsUpdate(ports: Swift.Set<StitchEngine.NodePortType<Self.Node>>)
-  @_Concurrency.MainActor var currentGraphTime: Foundation.TimeInterval { get }
-}
-#endif
 extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public var connections: Self.TopologicalData.Connections {
     get
@@ -67,17 +49,15 @@ extension StitchEngine.GraphCalculatable {
   @_Concurrency.MainActor public func immediatelyUpstreamNodes(for node: Self.Node.ID) -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor public func updatePortViews()
 }
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identifiable {
   associatedtype InputRow : StitchEngine.InputNodeRowCalculatable where Self.ID == Self.InputRow.ID.NodeId, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId
   associatedtype OutputRow : StitchEngine.NodeRowCalculatable
   associatedtype EvalResult : StitchEngine.NodeEvalResult where Self.EvalResult.PortData == Self.InputRow.PortData
   associatedtype NodeMediaEphemeralObservable : StitchEngine.MediaEphemeralObservable where Self == Self.NodeMediaEphemeralObservable.Node
-  typealias InputPortData = Self.InputRow.PortData
   typealias NodeId = Self.InputRow.RowID.NodeId
   typealias PortData = Self.InputRow.PortData
   typealias MediaType = Self.EvalResult.MediaType
-  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.InputPortData]])
+  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.PortData]])
   @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
   @_Concurrency.MainActor var inputsObservers: [Self.InputRow] { get set }
   @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
@@ -85,29 +65,10 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   @_Concurrency.MainActor var isGroupNode: Swift.Bool { get }
   @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
   @_Concurrency.MainActor var isComponentOutputSplitter: Swift.Bool { get }
-  @_Concurrency.MainActor func getMediaObservers() -> [Self.NodeMediaEphemeralObservable]?
+  @_Concurrency.MainActor func getMediaObservers(port: Self.InputRow.RowID) -> [Self.NodeMediaEphemeralObservable]?
+  @_Concurrency.MainActor func updateInputMedia(inputCoordinate: Self.InputRow.ID, mediaList: [Self.MediaType?])
+  @_Concurrency.MainActor func updateMediaAfterEval(mediaList: [Self.MediaType?])
 }
-#else
-public protocol NodeCalculatable : AnyObject, Swift.Identifiable {
-  associatedtype InputRow : StitchEngine.InputNodeRowCalculatable where Self.ID == Self.InputRow.ID.NodeId, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId
-  associatedtype OutputRow : StitchEngine.NodeRowCalculatable
-  associatedtype EvalResult : StitchEngine.NodeEvalResult where Self.EvalResult.PortData == Self.InputRow.PortData
-  associatedtype NodeMediaEphemeralObservable : StitchEngine.MediaEphemeralObservable where Self == Self.NodeMediaEphemeralObservable.Node
-  typealias InputPortData = Self.InputRow.PortData
-  typealias NodeId = Self.InputRow.RowID.NodeId
-  typealias PortData = Self.InputRow.PortData
-  typealias MediaType = Self.EvalResult.MediaType
-  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.InputPortData]])
-  @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
-  @_Concurrency.MainActor var inputsObservers: [Self.InputRow] { get set }
-  @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }
-  @_Concurrency.MainActor func getInputRowObserver(for id: Self.InputRow.RowID.PortId) -> Self.InputRow?
-  @_Concurrency.MainActor var isGroupNode: Swift.Bool { get }
-  @_Concurrency.MainActor var inputsValuesList: [[Self.EvalResult.PortData]] { get }
-  @_Concurrency.MainActor var isComponentOutputSplitter: Swift.Bool { get }
-  @_Concurrency.MainActor func getMediaObservers() -> [Self.NodeMediaEphemeralObservable]?
-}
-#endif
 public protocol MediaEphemeralObservable : AnyObject {
   associatedtype Node : StitchEngine.NodeCalculatable
   @_Concurrency.MainActor var inputMedia: Self.Node.EvalResult.MediaType? { get set }
@@ -153,7 +114,6 @@ extension Swift.Array where Element : StitchEngine.NodeRowCalculatable {
     get
   }
 }
-#if compiler(>=5.3) && $PrimaryAssociatedTypes2
 public protocol NodeRowId<NodeId> : Swift.Hashable, Swift.Identifiable {
   associatedtype NodeId : Swift.Comparable, Swift.Hashable, Swift.Identifiable
   associatedtype PortId : Swift.Identifiable
@@ -161,20 +121,11 @@ public protocol NodeRowId<NodeId> : Swift.Hashable, Swift.Identifiable {
   var nodeId: Self.NodeId { get set }
   init(portId: Swift.Int, nodeId: Self.NodeId)
 }
-#else
-public protocol NodeRowId : Swift.Hashable, Swift.Identifiable {
-  associatedtype NodeId : Swift.Comparable, Swift.Hashable, Swift.Identifiable
-  associatedtype PortId : Swift.Identifiable
-  var portType: Self.PortId { get set }
-  var nodeId: Self.NodeId { get set }
-  init(portId: Swift.Int, nodeId: Self.NodeId)
-}
-#endif
 public enum NodePortType<Node> : Swift.Hashable where Node : StitchEngine.NodeCalculatable {
   case input(Node.InputRow.ID)
   case allOutputs(Node.ID)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: StitchEngine.NodePortType<Node>, b: StitchEngine.NodePortType<Node>) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
