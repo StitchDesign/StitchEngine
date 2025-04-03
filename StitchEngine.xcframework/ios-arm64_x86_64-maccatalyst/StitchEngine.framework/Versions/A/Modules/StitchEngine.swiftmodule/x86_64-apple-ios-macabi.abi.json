@@ -3586,7 +3586,7 @@
           {
             "kind": "Function",
             "name": "getMediaObservers",
-            "printedName": "getMediaObservers()",
+            "printedName": "getMediaObservers(port:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3608,11 +3608,66 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.InputRow.RowID"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP17getMediaObserversSay0cF19EphemeralObservableQzGSgyF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP17getMediaObserversSay0cF19EphemeralObservableQzGSgyF",
+            "usr": "s:12StitchEngine16NodeCalculatableP17getMediaObservers4portSay0cF19EphemeralObservableQzGSg8InputRow_2IDQZ_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP17getMediaObservers4portSay0cF19EphemeralObservableQzGSg8InputRow_2IDQZ_tF",
+            "moduleName": "StitchEngine",
+            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
+            "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateInputMedia",
+            "printedName": "updateInputMedia(inputCoordinate:mediaList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.InputRow.ID"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.EvalResult.MediaType?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.EvalResult.MediaType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.EvalResult.MediaType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12StitchEngine16NodeCalculatableP16updateInputMedia15inputCoordinate9mediaListy0F3Row_2IDQZ_Say10EvalResult_0G4TypeQZSgGtF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP16updateInputMedia15inputCoordinate9mediaListy0F3Row_2IDQZ_Say10EvalResult_0G4TypeQZSgGtF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
@@ -3656,15 +3711,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatablePAAE20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
-            "mangledName": "$s12StitchEngine16NodeCalculatablePAAE20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
+            "usr": "s:12StitchEngine16NodeCalculatableP20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP20updateMediaAfterEval9mediaListySay0H6Result_0F4TypeQZSgG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
+            "protocolReq": true,
             "declAttributes": [
               "Custom"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -9356,6 +9412,51 @@
           },
           {
             "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -9402,51 +9503,6 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
