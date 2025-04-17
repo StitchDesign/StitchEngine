@@ -8,7 +8,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension StitchEngine.GraphCalculatable {
-  @_Concurrency.MainActor public func calculate(from nodeIds: Swift.Set<Self.Node.ID>)
+  @_Concurrency.MainActor public func calculate(from nodeIds: Swift.Set<Self.Node.ID>) -> (Swift.Set<StitchEngine.NodePortType<Self.Node>>, Swift.Bool)
   @_Concurrency.MainActor public func scheduleForNextGraphStep(_ id: Self.Node.ID)
   @_Concurrency.MainActor public func scheduleForNextGraphStep(_ idSet: Swift.Set<Self.Node.ID>)
   @_Concurrency.MainActor public func scheduleForNextGraphStep(_ idList: [Self.Node.ID])
@@ -27,8 +27,7 @@ public protocol GraphCalculatable<Node> : AnyObject {
   @_Concurrency.MainActor var nodes: [Self.Node.ID : Self.Node] { get set }
   @_Concurrency.MainActor var portsToUpdate: Swift.Set<StitchEngine.NodePortType<Self.Node>> { get set }
   @_Concurrency.MainActor var shouldResortPreviewLayers: Swift.Bool { get set }
-  @_Concurrency.MainActor func getNodeViewModel(id: Self.Node.ID) -> Self.Node?
-  @_Concurrency.MainActor func updateOrderedPreviewLayers()
+  @_Concurrency.MainActor func getNode(id: Self.Node.ID) -> Self.Node?
   @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
@@ -47,7 +46,6 @@ extension StitchEngine.GraphCalculatable {
   }
   @_Concurrency.MainActor public func setNodesForNextGraphStep(_ nodeIds: Swift.Set<Self.Node.ID>)
   @_Concurrency.MainActor public func immediatelyUpstreamNodes(for node: Self.Node.ID) -> Swift.Set<Self.Node.ID>
-  @_Concurrency.MainActor public func updatePortViews()
 }
 public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identifiable {
   associatedtype InputRow : StitchEngine.InputNodeRowCalculatable where Self.ID == Self.InputRow.ID.NodeId, Self.InputRow.OutputRowID == Self.OutputRow.ID, Self.InputRow.PortData == Self.OutputRow.PortData, Self.InputRow.ID.NodeId == Self.InputRow.OutputRowID.NodeId

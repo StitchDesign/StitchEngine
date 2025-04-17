@@ -1653,7 +1653,8 @@
             "moduleName": "StitchEngine",
             "protocolReq": true,
             "declAttributes": [
-              "Custom"
+              "Custom",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -1777,7 +1778,8 @@
             "moduleName": "StitchEngine",
             "protocolReq": true,
             "declAttributes": [
-              "Custom"
+              "Custom",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -1855,8 +1857,8 @@
           },
           {
             "kind": "Function",
-            "name": "getNodeViewModel",
-            "printedName": "getNodeViewModel(id:)",
+            "name": "getNode",
+            "printedName": "getNode(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1878,32 +1880,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatableP16getNodeViewModel2id0F0QzSgAF_2IDQZ_tF",
-            "mangledName": "$s12StitchEngine17GraphCalculatableP16getNodeViewModel2id0F0QzSgAF_2IDQZ_tF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateOrderedPreviewLayers",
-            "printedName": "updateOrderedPreviewLayers()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatableP26updateOrderedPreviewLayersyyF",
-            "mangledName": "$s12StitchEngine17GraphCalculatableP26updateOrderedPreviewLayersyyF",
+            "usr": "s:12StitchEngine17GraphCalculatableP7getNode2id0F0QzSgAF_2IDQZ_tF",
+            "mangledName": "$s12StitchEngine17GraphCalculatableP7getNode2id0F0QzSgAF_2IDQZ_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2099,8 +2077,37 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Tuple",
+                "printedName": "(Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>, Swift.Bool)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NodePortType",
+                        "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Node"
+                          }
+                        ],
+                        "usr": "s:12StitchEngine12NodePortTypeO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
               },
               {
                 "kind": "TypeNominal",
@@ -2117,8 +2124,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE9calculate4fromyShy4Node_2IDQZG_tF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE9calculate4fromyShy4Node_2IDQZG_tF",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE9calculate4fromShyAA12NodePortTypeOy0G0QzGG_SbtShyAH_2IDQZG_tF",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE9calculate4fromShyAA12NodePortTypeOy0G0QzGG_SbtShyAH_2IDQZG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -2958,30 +2965,6 @@
             "declKind": "Func",
             "usr": "s:12StitchEngine17GraphCalculatablePAAE24immediatelyUpstreamNodes3forShy4Node_2IDQZGAH_tF",
             "mangledName": "$s12StitchEngine17GraphCalculatablePAAE24immediatelyUpstreamNodes3forShy4Node_2IDQZGAH_tF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updatePortViews",
-            "printedName": "updatePortViews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatablePAAE15updatePortViewsyyF",
-            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE15updatePortViewsyyF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -9618,7 +9601,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ellbosch\/Repos\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
+      "filePath": "\/Users\/christianjclampitt\/Local Documents\/wissenschaft\/StitchEngine-ACTUAL-CODE\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 2,
