@@ -26,12 +26,10 @@ public protocol GraphCalculatable<Node> : AnyObject {
   var topologicalData: Self.TopologicalData { get }
   @_Concurrency.MainActor var nodes: [Self.Node.ID : Self.Node] { get set }
   @_Concurrency.MainActor var portsToUpdate: Swift.Set<StitchEngine.NodePortType<Self.Node>> { get set }
-  @_Concurrency.MainActor var shouldResortPreviewLayers: Swift.Bool { get set }
   @_Concurrency.MainActor func getNode(id: Self.Node.ID) -> Self.Node?
   @_Concurrency.MainActor func getNodesToAlwaysRun() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func getAnimationNodes() -> Swift.Set<Self.Node.ID>
   @_Concurrency.MainActor func evaluateComponentOutputs()
-  @_Concurrency.MainActor func didPortsUpdate(ports: Swift.Set<StitchEngine.NodePortType<Self.Node>>)
   @_Concurrency.MainActor var currentGraphTime: Foundation.TimeInterval { get }
 }
 extension StitchEngine.GraphCalculatable {
@@ -55,7 +53,7 @@ public protocol NodeCalculatable<InputRow, OutputRow> : AnyObject, Swift.Identif
   typealias NodeId = Self.InputRow.RowID.NodeId
   typealias PortData = Self.InputRow.PortData
   typealias MediaType = Self.EvalResult.MediaType
-  @_Concurrency.MainActor func inputsWillUpdate(values: [[Self.PortData]])
+  @_Concurrency.MainActor func updateLayerViewModels(values: [[Self.PortData]]) -> Swift.Bool
   @_Concurrency.MainActor func evaluate() -> Self.EvalResult?
   @_Concurrency.MainActor var inputsObservers: [Self.InputRow] { get set }
   @_Concurrency.MainActor var outputsObservers: [Self.OutputRow] { get set }

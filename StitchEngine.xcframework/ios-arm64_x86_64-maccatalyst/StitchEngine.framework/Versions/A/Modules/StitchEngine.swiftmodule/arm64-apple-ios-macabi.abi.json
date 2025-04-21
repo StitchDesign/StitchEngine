@@ -1761,101 +1761,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "shouldResortPreviewLayers",
-            "printedName": "shouldResortPreviewLayers",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvp",
-            "mangledName": "$s12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvp",
-            "moduleName": "StitchEngine",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvg",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvg",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvs",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvs",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvM",
-                "mangledName": "$s12StitchEngine17GraphCalculatableP25shouldResortPreviewLayersSbvM",
-                "moduleName": "StitchEngine",
-                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "getNode",
             "printedName": "getNode(id:)",
@@ -1970,51 +1875,6 @@
             "declKind": "Func",
             "usr": "s:12StitchEngine17GraphCalculatableP24evaluateComponentOutputsyyF",
             "mangledName": "$s12StitchEngine17GraphCalculatableP24evaluateComponentOutputsyyF",
-            "moduleName": "StitchEngine",
-            "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
-            "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didPortsUpdate",
-            "printedName": "didPortsUpdate(ports:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<StitchEngine.NodePortType<τ_0_0.Node>>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NodePortType",
-                    "printedName": "StitchEngine.NodePortType<τ_0_0.Node>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DependentMember",
-                        "printedName": "τ_0_0.Node"
-                      }
-                    ],
-                    "usr": "s:12StitchEngine12NodePortTypeO"
-                  }
-                ],
-                "usr": "s:Sh"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12StitchEngine17GraphCalculatableP14didPortsUpdate5portsyShyAA12NodePortTypeOy0I0QzGG_tF",
-            "mangledName": "$s12StitchEngine17GraphCalculatableP14didPortsUpdate5portsyShyAA12NodePortTypeOy0I0QzGG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
@@ -3059,13 +2919,14 @@
           },
           {
             "kind": "Function",
-            "name": "inputsWillUpdate",
-            "printedName": "inputsWillUpdate(values:)",
+            "name": "updateLayerViewModels",
+            "printedName": "updateLayerViewModels(values:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -3090,14 +2951,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay10EvalResult_8PortDataQZGG_tF",
-            "mangledName": "$s12StitchEngine16NodeCalculatableP16inputsWillUpdate6valuesySaySay10EvalResult_8PortDataQZGG_tF",
+            "usr": "s:12StitchEngine16NodeCalculatableP21updateLayerViewModels6valuesSbSaySay10EvalResult_8PortDataQZGG_tF",
+            "mangledName": "$s12StitchEngine16NodeCalculatableP21updateLayerViewModels6valuesSbSaySay10EvalResult_8PortDataQZGG_tF",
             "moduleName": "StitchEngine",
             "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.NodeCalculatable>",
             "sugared_genericSig": "<Self where Self : StitchEngine.NodeCalculatable>",
             "protocolReq": true,
             "declAttributes": [
-              "Custom"
+              "Custom",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
