@@ -2834,6 +2834,65 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "nodeIdsInTopologicalOrder",
+            "printedName": "nodeIdsInTopologicalOrder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.Node.ID]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Node.ID"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12StitchEngine17GraphCalculatablePAAE25nodeIdsInTopologicalOrderSay4Node_2IDQZGvp",
+            "mangledName": "$s12StitchEngine17GraphCalculatablePAAE25nodeIdsInTopologicalOrderSay4Node_2IDQZGvp",
+            "moduleName": "StitchEngine",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[τ_0_0.Node.ID]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.Node.ID"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12StitchEngine17GraphCalculatablePAAE25nodeIdsInTopologicalOrderSay4Node_2IDQZGvg",
+                "mangledName": "$s12StitchEngine17GraphCalculatablePAAE25nodeIdsInTopologicalOrderSay4Node_2IDQZGvg",
+                "moduleName": "StitchEngine",
+                "genericSig": "<τ_0_0 where τ_0_0 : StitchEngine.GraphCalculatable>",
+                "sugared_genericSig": "<Self where Self : StitchEngine.GraphCalculatable>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Protocol",
@@ -9463,7 +9522,7 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/christianjclampitt\/Local Documents\/wissenschaft\/StitchEngine-ACTUAL-CODE\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
+      "filePath": "\/Users\/ellbosch\/Repos\/StitchEngineClosedSource\/Sources\/StitchEngine\/Util.swift",
       "kind": "StringLiteral",
       "offset": 137,
       "length": 2,
